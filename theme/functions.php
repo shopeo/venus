@@ -30,3 +30,5 @@ if ( ! function_exists( 'venus_scripts' ) ) {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'venus_scripts' );
+
+require get_template_directory() . '/inc/block-patterns.php';
