@@ -15,4 +15,8 @@ mix.js('javascript/app.js', 'theme/assets/js').sass('style/style.scss', 'theme',
 	require('tailwindcss'),
 	require('rtlcss'),
 	require('autoprefixer'),
+]).sass('style/editor-style.scss', 'theme', [], [
+	require('postcss-import'),
+	require('tailwindcss'),
+	require('autoprefixer'),
 ]);
