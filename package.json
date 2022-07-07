@@ -1,0 +1,19 @@
+{
+  "name": "venus",
+  "version": "0.0.1",
+  "description": "Venus theme",
+  "scripts": {},
+  "repository": {
+	"type": "git",
+	"url": "git+https://github.com/shopeo/venus.git"
+  },
+  "author": "SHOPEO<hello@shopeo.cn>",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+	"url": "https://github.com/shopeo/venus/issues"
+  },
+  "homepage": "https://www.shopeo.cn",
+  "devDependencies": {
+	"laravel-mix": "^6.0.49"
+  }
+}

@@ -1,1 +1,1 @@
-# Venus theme by wordpress
+# Venus
