@@ -8,27 +8,6 @@
 		"page",
 		"post"
 	  ]
-	},
-	{
-	  "name": "page-large-header",
-	  "title": "Page (Large Header)",
-	  "postTypes": [
-		"page"
-	  ]
-	},
-	{
-	  "name": "single-no-separators",
-	  "title": "Single Post (No Separators)",
-	  "postTypes": [
-		"post"
-	  ]
-	},
-	{
-	  "name": "page-no-separators",
-	  "title": "Page (No Separators)",
-	  "postTypes": [
-		"page"
-	  ]
 	}
   ],
   "settings": {
@@ -176,8 +155,6 @@
 	  }
 	},
 	"spacing": {
-	  "padding": true,
-	  "margin": true,
 	  "units": [
 		"%",
 		"px",
@@ -241,8 +218,8 @@
 	  ]
 	},
 	"layout": {
-	  "contentSize": "80rem",
-	  "wideSize": "100%"
+	  "contentSize": "650px",
+	  "wideSize": "1000px"
 	}
   },
   "styles": {
@@ -297,6 +274,7 @@
 		  "fontFamily": "var(--wp--preset--font-family--system-font)",
 		  "lineHeight": "var(--wp--custom--typography--line-height--normal)",
 		  "fontSize": "var(--wp--preset--font-size--medium)",
+		  "fontStyle": "italic",
 		  "fontWeight": "normal"
 		}
 	  }
