@@ -8,6 +8,6 @@ mix.js('javascript/app.js', 'theme/assets/js').sass('style/style.scss', 'theme',
 ]).sass('style/rtl.scss', 'theme', [], [
 	require('postcss-import'),
 	require('tailwindcss'),
-	require('autoprefixer'),
 	require('rtlcss'),
+	require('autoprefixer'),
 ]);
