@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+$fa-font-path: "./assets/fonts";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+@import "animate.css";
