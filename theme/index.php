@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<main id="site-content">
+<main id="site-content">
 
-	</main>
+</main>
 <?php get_footer(); ?>
