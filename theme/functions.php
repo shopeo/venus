@@ -4,7 +4,7 @@ if ( ! function_exists( 'venus_support' ) ) {
 		add_theme_support( 'automatic-feed-links' );
 
 		add_theme_support( 'custom-background', array(
-			'default-color' => 'F5EFE0',
+				'default-color' => 'F5EFE0',
 		) );
 
 		global $content_width;
@@ -25,26 +25,26 @@ if ( ! function_exists( 'venus_support' ) ) {
 		}
 
 		add_theme_support( 'custom-logo', array(
-			'height'      => $logo_height,
-			'width'       => $logo_width,
-			'flex-height' => true,
-			'flex-width'  => true,
+				'height'      => $logo_height,
+				'width'       => $logo_width,
+				'flex-height' => true,
+				'flex-width'  => true,
 		) );
 
 		add_theme_support( 'title-tag' );
 
 		add_theme_support(
-			'html5',
-			array(
-				'search-form',
-				'comment-form',
-				'comment-list',
-				'gallery',
-				'caption',
-				'script',
-				'style',
-				'navigation-widgets',
-			)
+				'html5',
+				array(
+						'search-form',
+						'comment-form',
+						'comment-list',
+						'gallery',
+						'caption',
+						'script',
+						'style',
+						'navigation-widgets',
+				)
 		);
 
 		load_theme_textdomain( 'venus' );
@@ -66,6 +66,8 @@ if ( ! function_exists( 'venus_support' ) ) {
 add_action( 'after_setup_theme', 'venus_support' );
 
 require_once get_template_directory() . '/classes/VenusScriptLoader.class.php';
+require_once get_template_directory() . '/classes/VenusNonLatinLanguages.class.php';
+require_once get_template_directory() . '/inc/custom-css.php';
 
 if ( ! function_exists( 'venus_styles' ) ) {
 	function venus_styles() {
@@ -86,4 +88,44 @@ if ( ! function_exists( 'venus_scripts' ) ) {
 		wp_script_add_data( 'venus-script', 'async', true );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'venus_scripts' );
+
+if ( ! function_exists( 'venus_skip_link_focus_fix' ) ) {
+	function venus_skip_link_focus_fix() {
+		?>
+		<script>
+			/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
+				var t, e = location.hash.substring(1);
+				/^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
+			}, !1);
+		</script>
+		<?php
+	}
+}
+
+add_action( 'wp_print_footer_scripts', 'venus_skip_link_focus_fix' );
+
+if ( ! function_exists( 'venus_non_latin_languages' ) ) {
+	function venus_non_latin_languages() {
+		$custom_css = VenusNonLatinLanguages::get_non_latin_css( 'front-end' );
+
+		if ( $custom_css ) {
+			wp_add_inline_style( 'venus-style', $custom_css );
+		}
+	}
+}
+
+add_action( 'wp_enqueue_scripts', 'venus_non_latin_languages' );
+
+if ( ! function_exists( 'venus_menus' ) ) {
+	function venus_menus() {
+		$locations = array(
+				'primary' => __( 'Primary', 'venus' )
+		);
+		register_nav_menus( $locations );
+	}
+}
+
+add_action( 'init', 'venus_menus' );
+
