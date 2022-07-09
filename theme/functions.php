@@ -1,8 +1,7 @@
 <?php
 if ( ! function_exists( 'venus_support' ) ) {
 	function venus_support() {
-		add_theme_support( 'wp-block-styles' );
-		add_editor_style( 'style.css' );
+
 	}
 }
 
