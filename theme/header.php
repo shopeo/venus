@@ -8,5 +8,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <header id="site-header">
-
+	<div>
+		<?php venus_site_logo(); ?>
+	</div>
 </header>
