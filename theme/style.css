@@ -11717,7 +11717,7 @@ readers do not read off random characters that represent icons */
 .menu-item .sub-menu{
   display: none;
 }
-.primary-menu .current-menu-parent > a,  .primary-menu .current-menu-parent::after,  .primary-menu .current-menu-parent .current-menu-item a{
+.primary-menu .current-menu-item > a,  .primary-menu .current-menu-item::after,  .primary-menu .current-menu-item .current-menu-item a,  .primary-menu .current-menu-parent > a,  .primary-menu .current-menu-parent::after,  .primary-menu .current-menu-parent .current-menu-item a{
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
 }

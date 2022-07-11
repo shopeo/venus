@@ -21,7 +21,7 @@ $fa-font-path: "./assets/fonts";
 }
 
 .primary-menu {
-  .current-menu-parent {
+  .current-menu-item, .current-menu-parent {
 	& > a, &::after, .current-menu-item a {
 	  @apply text-blue-800;
 	}
