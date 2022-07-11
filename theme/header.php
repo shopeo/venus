@@ -8,7 +8,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <header id="site-header" class="bg-white">
-	<div class="flex  max-w-8xl p-4 mx-auto space-x-14">
+	<div class="flex max-w-8xl p-4 mx-auto space-x-14">
 		<div class="flex-none">
 			<?php venus_site_logo(); ?>
 		</div>
@@ -20,7 +20,7 @@
 					'depth'           => 2
 			) );
 		} ?>
-		<div class="hidden md:block flex-none">
+		<div class="hidden md:flex space-x-4">
 			<?php get_search_form(); ?>
 		</div>
 	</div>

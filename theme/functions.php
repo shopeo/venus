@@ -4,7 +4,7 @@ if ( ! function_exists( 'venus_support' ) ) {
 		add_theme_support( 'automatic-feed-links' );
 
 		add_theme_support( 'custom-background', array(
-				'default-color' => 'f5efe0',
+				'default-color' => 'dedede',
 		) );
 
 		global $content_width;

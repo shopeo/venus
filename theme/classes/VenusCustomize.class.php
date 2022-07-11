@@ -20,6 +20,13 @@ if ( ! class_exists( 'VenusCustomize' ) ) {
 				)
 			);
 
+			$wp_customize->selective_refresh->add_partial(
+				'enable_header_search',
+				array(
+					'selector' => '#site-header .search-form'
+				)
+			);
+
 			$wp_customize->add_setting(
 				'retina_logo',
 				array(
