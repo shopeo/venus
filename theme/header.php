@@ -21,7 +21,12 @@
 			) );
 		} ?>
 		<div class="hidden md:flex space-x-4">
-			<?php get_search_form(); ?>
+			<?php
+			$enable_header_search = get_theme_mod( 'enable_header_search', true );
+			if ( $enable_header_search === true ) {
+				get_search_form();
+			}
+			?>
 		</div>
 	</div>
 </header>
