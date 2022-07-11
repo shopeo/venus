@@ -50,7 +50,7 @@ if ( ! class_exists( 'VenusCustomize' ) ) {
 			/**
 			 * Colors
 			 */
-
+			VenusColorsCustomize::register( $wp_customize );
 
 			/**
 			 * Header Options

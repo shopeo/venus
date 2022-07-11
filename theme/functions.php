@@ -66,6 +66,7 @@ if ( ! function_exists( 'venus_support' ) ) {
 add_action( 'after_setup_theme', 'venus_support' );
 
 require_once get_template_directory() . '/inc/template-tags.php';
+require_once get_template_directory() . '/classes/VenusColorsCustomize.class.php';
 require_once get_template_directory() . '/classes/VenusCustomize.class.php';
 require_once get_template_directory() . '/classes/VenusSeparatorControl.class.php';
 require_once get_template_directory() . '/classes/VenusScriptLoader.class.php';
