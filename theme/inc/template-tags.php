@@ -78,3 +78,14 @@ if ( ! function_exists( 'venus_filter_comment_reply_link' ) ) {
 }
 
 add_filter( 'comment_reply_link', 'venus_filter_comment_reply_link' );
+
+if ( ! function_exists( 'venus_unique_id' ) ) {
+	function venus_unique_id( $prefix = '' ) {
+		static $id_counter = 0;
+		if ( function_exists( 'wp_unique_id' ) ) {
+			return wp_unique_id( $prefix );
+		}
+
+		return $prefix . (string) ++ $id_counter;
+	}
+}

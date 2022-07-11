@@ -3871,6 +3871,12 @@ video {
 .hidden{
   display: none;
 }
+.flex-none{
+  flex: none;
+}
+.grow{
+  flex-grow: 1;
+}
 .justify-between{
   justify-content: space-between;
 }
