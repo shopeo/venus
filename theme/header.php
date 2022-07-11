@@ -14,9 +14,10 @@
 		</div>
 		<?php if ( has_nav_menu( 'primary' ) ) {
 			wp_nav_menu( array(
-					'menu_class'     => 'primary-menu flex space-x-10',
-					'theme_location' => 'primary',
-					'depth'          => 2
+					'container_class' => 'hidden md:block',
+					'menu_class'      => 'primary-menu flex space-x-10',
+					'theme_location'  => 'primary',
+					'depth'           => 2
 			) );
 		} ?>
 	</div>
