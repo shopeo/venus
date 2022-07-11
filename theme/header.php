@@ -7,8 +7,17 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header id="site-header">
-	<div>
-		<?php venus_site_logo(); ?>
+<header id="site-header" class="bg-white">
+	<div class="flex justify-between max-w-8xl p-4 mx-auto">
+		<div>
+			<?php venus_site_logo(); ?>
+		</div>
+		<?php if ( has_nav_menu( 'primary' ) ) {
+			wp_nav_menu( array(
+					'menu_class'     => 'primary-menu flex space-x-10',
+					'theme_location' => 'primary',
+					'depth'          => 2
+			) );
+		} ?>
 	</div>
 </header>

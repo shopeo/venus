@@ -3862,14 +3862,42 @@ video {
   max-width: 100%;
   height: auto;
 }
+.sub-menu{
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+}
 .static{
   position: static;
+}
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex{
+  display: flex;
 }
 .table{
   display: table;
 }
 .contents{
   display: contents;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.space-x-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.p-4{
+  padding: 1rem;
 }
 /*!
  * Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com
@@ -11679,4 +11707,56 @@ readers do not read off random characters that represent icons */
 }
 .fa-zhihu:before {
   content: "\f63f";
+}
+.max-w-8xl {
+  max-width: 90rem;
+}
+.menu-item .sub-menu{
+  display: none;
+}
+.primary-menu .current-menu-parent > a,  .primary-menu .current-menu-parent::after,  .primary-menu .current-menu-parent .current-menu-item a{
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+.primary-menu a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+.primary-menu > .menu-item-has-children::after {
+  content: "\f0d7";
+}
+
+.primary-menu > .menu-item-has-children::after {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+.primary-menu > .menu-item-has-children::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 0.25rem;
+}
+.primary-menu > .menu-item-has-children:hover > a,  .primary-menu > .menu-item-has-children:hover::after{
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+.primary-menu > .menu-item-has-children:hover .sub-menu > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+.primary-menu > .menu-item-has-children:hover .sub-menu{
+  display: block;
+  position: absolute;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1rem;
+  border-radius: 0.25rem;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }

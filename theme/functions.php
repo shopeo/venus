@@ -4,7 +4,7 @@ if ( ! function_exists( 'venus_support' ) ) {
 		add_theme_support( 'automatic-feed-links' );
 
 		add_theme_support( 'custom-background', array(
-				'default-color' => 'F5EFE0',
+				'default-color' => 'f5efe0',
 		) );
 
 		global $content_width;
@@ -16,8 +16,8 @@ if ( ! function_exists( 'venus_support' ) ) {
 		set_post_thumbnail_size( 1200, 9999 );
 		add_image_size( 'venus-fullscreen', 1980, 9999 );
 
-		$logo_width  = 120;
-		$logo_height = 90;
+		$logo_width  = 160;
+		$logo_height = 30;
 
 		if ( get_theme_mod( 'retina_logo', false ) ) {
 			$logo_width  = floor( $logo_width * 2 );

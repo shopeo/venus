@@ -9,3 +9,51 @@ $fa-font-path: "./assets/fonts";
 @import '~@fortawesome/fontawesome-free/scss/brands';
 
 @import "animate.css";
+
+.max-w-8xl {
+  max-width: 90rem;
+}
+
+.menu-item {
+  .sub-menu {
+	@apply hidden;
+  }
+}
+
+.primary-menu {
+  .current-menu-parent {
+	& > a, &::after, .current-menu-item a {
+	  @apply text-blue-800;
+	}
+  }
+
+  a {
+	&:hover {
+	  @apply text-blue-800;
+	}
+  }
+
+  & > .menu-item-has-children {
+	&::after {
+	  content: '\f0d7';
+	  @apply fas;
+	  @apply mr-1;
+	}
+
+	&:hover {
+	  & > a, &::after {
+		@apply text-blue-800;
+	  }
+
+	  .sub-menu {
+		@apply space-y-1;
+		@apply block;
+		@apply absolute;
+		@apply bg-white;
+		@apply p-4;
+		@apply rounded;
+		@apply shadow;
+	  }
+	}
+  }
+}

@@ -3,29 +3,10 @@
 if ( ! class_exists( 'VenusCustomize' ) ) {
 	class VenusCustomize {
 		public static function register( $wp_customize ) {
-			$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
-			$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
-
-			$wp_customize->selective_refresh->add_partial(
-				'blogname',
-				array(
-					'selector'        => '.site-title a',
-					'render_callback' => 'venus_customize_partial_blogname',
-				)
-			);
-
-			$wp_customize->selective_refresh->add_partial(
-				'blogdescription',
-				array(
-					'selector'        => '.site-description',
-					'render_callback' => 'venus_customize_partial_blogdescription',
-				)
-			);
-
 			$wp_customize->selective_refresh->add_partial(
 				'custom_logo',
 				array(
-					'selector'            => '.header-titles [class*=site-]:not(.site-description)',
+					'selector'            => '.site-logo',
 					'render_callback'     => 'venus_customize_partial_site_logo',
 					'container_inclusive' => true,
 				)
@@ -34,7 +15,7 @@ if ( ! class_exists( 'VenusCustomize' ) ) {
 			$wp_customize->selective_refresh->add_partial(
 				'retina_logo',
 				array(
-					'selector'        => '.header-titles [class*=site-]:not(.site-description)',
+					'selector'        => '.site-logo',
 					'render_callback' => 'venus_customize_partial_site_logo',
 				)
 			);
@@ -108,18 +89,6 @@ if ( ! class_exists( 'VenusCustomize' ) ) {
 	}
 
 	add_action( 'customize_register', array( 'VenusCustomize', 'register' ) );
-}
-
-if ( ! function_exists( 'venus_customize_partial_blogname' ) ) {
-	function venus_customize_partial_blogname() {
-		bloginfo( 'name' );
-	}
-}
-
-if ( ! function_exists( 'venus_customize_partial_blogdescription' ) ) {
-	function venus_customize_partial_blogdescription() {
-		bloginfo( 'description' );
-	}
 }
 
 if ( ! function_exists( 'venus_customize_partial_site_logo' ) ) {
