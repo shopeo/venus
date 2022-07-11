@@ -48,6 +48,11 @@ if ( ! class_exists( 'VenusCustomize' ) ) {
 			);
 
 			/**
+			 * Colors
+			 */
+
+
+			/**
 			 * Header Options
 			 */
 			$wp_customize->add_section( 'header', array(
