@@ -23,13 +23,13 @@ $fa-font-path: "./assets/fonts";
 .primary-menu {
   .current-menu-item, .current-menu-parent {
 	& > a, &::after, .current-menu-item a {
-	  @apply text-blue-800;
+	  @apply text-primary-500;
 	}
   }
 
   a {
 	&:hover {
-	  @apply text-blue-800;
+	  @apply text-primary-500;
 	}
   }
 
@@ -42,7 +42,7 @@ $fa-font-path: "./assets/fonts";
 
 	&:hover {
 	  & > a, &::after {
-		@apply text-blue-800;
+		@apply text-primary-500;
 	  }
 
 	  .sub-menu {
