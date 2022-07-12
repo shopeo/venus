@@ -216,3 +216,26 @@ if ( ! function_exists( 'venus_customize_preview_init' ) ) {
 }
 
 add_action( 'customize_preview_init', 'venus_customize_preview_init' );
+
+if ( ! function_exists( 'venus_head' ) ) {
+	function venus_head() {
+		?>
+		<style>
+			:root {
+				--primary-color-50: <?php echo get_theme_mod('primary_color_50','#B2CBFB');?>;
+				--primary-color-100: <?php echo get_theme_mod('primary_color_100','#9EBDFA');?>;
+				--primary-color-200: <?php echo get_theme_mod('primary_color_200','#77A3F8');?>;
+				--primary-color-300: <?php echo get_theme_mod('primary_color_300','#5189F6');?>;
+				--primary-color-400: <?php echo get_theme_mod('primary_color_400','#2A6EF4');?>;
+				--primary-color-500: <?php echo get_theme_mod('primary_color_500','#0C57E9');?>;
+				--primary-color-600: <?php echo get_theme_mod('primary_color_600','#0943B4');?>;
+				--primary-color-700: <?php echo get_theme_mod('primary_color_700','#072F7E');?>;
+				--primary-color-800: <?php echo get_theme_mod('primary_color_800','#041B49');?>;
+				--primary-color-900: <?php echo get_theme_mod('primary_color_900','#010714');?>;
+			}
+		</style>
+		<?php
+	}
+}
+
+add_action( 'wp_head', 'venus_head' );
