@@ -10,16 +10,16 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: {
-					50: '#fef2f3',
-					100: '#fde6e7',
-					200: '#f9bfc4',
-					300: '#f599a0',
-					400: '#ee4d59',
-					500: '#e60012',
-					600: '#cf0010',
-					700: '#ad000e',
-					800: '#8a000b',
-					900: '#710009'
+					50: 'var(--primary-color-50)',
+					100: 'var(--primary-color-100)',
+					200: 'var(--primary-color-200)',
+					300: 'var(--primary-color-300)',
+					400: 'var(--primary-color-400)',
+					500: 'var(--primary-color-500)',
+					600: 'var(--primary-color-600)',
+					700: 'var(--primary-color-700)',
+					800: 'var(--primary-color-800)',
+					900: 'var(--primary-color-900)'
 				}
 			},
 			fontFamily: {
