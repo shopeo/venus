@@ -20,13 +20,17 @@
 					'depth'           => 2
 			) );
 		} ?>
-		<div class="hidden md:flex space-x-4">
-			<?php
-			$enable_header_search = get_theme_mod( 'enable_header_search', true );
+		<div class="hidden md:flex items-center space-x-4">
+			<?php $enable_header_search = get_theme_mod( 'enable_header_search', true );
 			if ( $enable_header_search === true ) {
 				get_search_form();
 			}
 			?>
+			<?php $enable_header_button = get_theme_mod( 'enable_header_button', true );
+			$header_button_text         = get_theme_mod( 'header_button_text' );
+			if ( $enable_header_button === true && $header_button_text ) {
+				venus_header_button();
+			} ?>
 		</div>
 	</div>
 </header>

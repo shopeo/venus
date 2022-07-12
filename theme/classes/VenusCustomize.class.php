@@ -3,49 +3,38 @@
 if ( ! class_exists( 'VenusCustomize' ) ) {
 	class VenusCustomize {
 		public static function register( $wp_customize ) {
-			$wp_customize->selective_refresh->add_partial(
-				'custom_logo',
-				array(
-					'selector'            => '.site-logo',
-					'render_callback'     => 'venus_customize_partial_site_logo',
-					'container_inclusive' => true,
-				)
-			);
+			$wp_customize->selective_refresh->add_partial( 'custom_logo', array(
+				'selector'            => '.site-logo',
+				'render_callback'     => 'venus_customize_partial_site_logo',
+				'container_inclusive' => true,
+			) );
 
-			$wp_customize->selective_refresh->add_partial(
-				'retina_logo',
-				array(
-					'selector'        => '.site-logo',
-					'render_callback' => 'venus_customize_partial_site_logo',
-				)
-			);
+			$wp_customize->selective_refresh->add_partial( 'retina_logo', array(
+				'selector'        => '.site-logo',
+				'render_callback' => 'venus_customize_partial_site_logo',
+			) );
 
-			$wp_customize->selective_refresh->add_partial(
-				'enable_header_search',
-				array(
-					'selector' => '#site-header .search-form'
-				)
-			);
+			$wp_customize->selective_refresh->add_partial( 'enable_header_search', array(
+				'selector' => '#site-header .search-form'
+			) );
 
-			$wp_customize->add_setting(
-				'retina_logo',
-				array(
-					'capability'        => 'edit_theme_options',
-					'sanitize_callback' => array( __CLASS__, 'sanitize_checkbox' ),
-					'transport'         => 'postMessage',
-				)
-			);
+			$wp_customize->selective_refresh->add_partial( 'enable_header_button', array(
+				'selector' => '#site-header .header-button'
+			) );
 
-			$wp_customize->add_control(
-				'retina_logo',
-				array(
-					'type'        => 'checkbox',
-					'section'     => 'title_tagline',
-					'priority'    => 10,
-					'label'       => __( 'Retina logo', 'venus' ),
-					'description' => __( 'Scales the logo to half its uploaded size, making it sharp on high-res screens.', 'venus' ),
-				)
-			);
+			$wp_customize->add_setting( 'retina_logo', array(
+				'capability'        => 'edit_theme_options',
+				'sanitize_callback' => array( __CLASS__, 'sanitize_checkbox' ),
+				'transport'         => 'postMessage',
+			) );
+
+			$wp_customize->add_control( 'retina_logo', array(
+				'type'        => 'checkbox',
+				'section'     => 'title_tagline',
+				'priority'    => 10,
+				'label'       => __( 'Retina logo', 'venus' ),
+				'description' => __( 'Scales the logo to half its uploaded size, making it sharp on high-res screens.', 'venus' ),
+			) );
 
 			/**
 			 * Colors
@@ -63,7 +52,7 @@ if ( ! class_exists( 'VenusCustomize' ) ) {
 
 			$wp_customize->add_setting( 'enable_header_search', array(
 				'capability'        => 'edit_theme_options',
-				'default'           => false,
+				'default'           => true,
 				'sanitize_callback' => array( __CLASS__, 'sanitize_checkbox' ),
 			) );
 
@@ -72,6 +61,43 @@ if ( ! class_exists( 'VenusCustomize' ) ) {
 				'section'  => 'header',
 				'priority' => 10,
 				'label'    => __( 'Show search in header', 'venus' ),
+			) );
+
+			$wp_customize->add_setting( 'enable_header_button', array(
+				'capability'        => 'edit_theme_options',
+				'default'           => true,
+				'sanitize_callback' => array( __CLASS__, 'sanitize_checkbox' ),
+			) );
+
+			$wp_customize->add_control( 'enable_header_button', array(
+				'type'     => 'checkbox',
+				'section'  => 'header',
+				'priority' => 10,
+				'label'    => __( 'Show button in header', 'venus' ),
+			) );
+
+			$wp_customize->add_setting( 'header_button_text', array(
+				'capability' => 'edit_theme_options',
+				'default'    => __( 'get started', 'venus' ),
+			) );
+
+			$wp_customize->add_control( 'header_button_text', array(
+				'type'     => 'text',
+				'section'  => 'header',
+				'priority' => 10,
+				'label'    => __( 'Button text in header', 'venus' ),
+			) );
+
+			$wp_customize->add_setting( 'header_button_link', array(
+				'capability' => 'edit_theme_options',
+				'default'    => '#',
+			) );
+
+			$wp_customize->add_control( 'header_button_link', array(
+				'type'     => 'url',
+				'section'  => 'header',
+				'priority' => 10,
+				'label'    => __( 'Button link in header', 'venus' ),
 			) );
 		}
 

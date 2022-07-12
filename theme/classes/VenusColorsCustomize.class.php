@@ -6,6 +6,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 			$wp_customize->add_setting(
 				'primary_color_50',
 				array(
+					'capability'        => 'edit_theme_options',
 					'default'           => '#B2CBFB',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
@@ -26,6 +27,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 			$wp_customize->add_setting(
 				'primary_color_100',
 				array(
+					'capability'        => 'edit_theme_options',
 					'default'           => '#9EBDFA',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
@@ -46,6 +48,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 			$wp_customize->add_setting(
 				'primary_color_200',
 				array(
+					'capability'        => 'edit_theme_options',
 					'default'           => '#77A3F8',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
@@ -66,6 +69,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 			$wp_customize->add_setting(
 				'primary_color_300',
 				array(
+					'capability'        => 'edit_theme_options',
 					'default'           => '#5189F6',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
@@ -86,6 +90,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 			$wp_customize->add_setting(
 				'primary_color_400',
 				array(
+					'capability'        => 'edit_theme_options',
 					'default'           => '#2A6EF4',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
@@ -106,6 +111,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 			$wp_customize->add_setting(
 				'primary_color_500',
 				array(
+					'capability'        => 'edit_theme_options',
 					'default'           => '#0C57E9',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
@@ -126,6 +132,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 			$wp_customize->add_setting(
 				'primary_color_600',
 				array(
+					'capability'        => 'edit_theme_options',
 					'default'           => '#0943B4',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
@@ -146,6 +153,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 			$wp_customize->add_setting(
 				'primary_color_700',
 				array(
+					'capability'        => 'edit_theme_options',
 					'default'           => '#072F7E',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
@@ -166,6 +174,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 			$wp_customize->add_setting(
 				'primary_color_800',
 				array(
+					'capability'        => 'edit_theme_options',
 					'default'           => '#041B49',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
@@ -186,6 +195,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 			$wp_customize->add_setting(
 				'primary_color_900',
 				array(
+					'capability'        => 'edit_theme_options',
 					'default'           => '#010714',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',

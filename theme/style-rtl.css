@@ -4029,6 +4029,9 @@ select{
 .ml-4{
   margin-right: 1rem;
 }
+.inline-block{
+  display: inline-block;
+}
 .flex{
   display: flex;
 }
@@ -4082,6 +4085,9 @@ select{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-primary-500{
+  background-color: var(--primary-color-500);
+}
 .bg-neutral-50{
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
@@ -4089,8 +4095,23 @@ select{
 .p-4{
   padding: 1rem;
 }
+.px-6{
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .pl-10{
   padding-right: 2.5rem;
+}
+.capitalize{
+  text-transform: capitalize;
+}
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .text-neutral-400{
   --tw-text-opacity: 1;
@@ -11961,6 +11982,9 @@ readers do not read off random characters that represent icons */
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.hover\:bg-primary-600:hover{
+  background-color: var(--primary-color-600);
 }
 .focus\:border-primary-500:focus{
   border-color: var(--primary-color-500);
