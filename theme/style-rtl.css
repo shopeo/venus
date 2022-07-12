@@ -4010,6 +4010,17 @@ select{
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
 }
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 .static{
   position: static;
 }
@@ -4056,6 +4067,9 @@ select{
 .items-center{
   align-items: center;
 }
+.justify-between{
+  justify-content: space-between;
+}
 .space-x-14 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-left: calc(3.5rem * var(--tw-space-x-reverse));
@@ -4071,11 +4085,22 @@ select{
   margin-left: calc(1rem * var(--tw-space-x-reverse));
   margin-right: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.space-y-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
 .rounded-full{
   border-radius: 9999px;
 }
 .border-2{
   border-width: 2px;
+}
+.border-t-4{
+  border-top-width: 4px;
+}
+.border-primary-500{
+  border-color: var(--primary-color-500);
 }
 .border-neutral-50{
   --tw-border-opacity: 1;
@@ -4477,12 +4502,12 @@ select{
 }
 @-webkit-keyframes fa-flip {
   50% {
-    transform: rotate3d(var«-1100:1», var«1100:-2», var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+    transform: rotate3d(var«-1104:1», var«1104:-2», var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
   }
 }
 @keyframes fa-flip {
   50% {
-    transform: rotate3d(var«-1100:1», var«1100:-2», var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+    transform: rotate3d(var«-1104:1», var«1104:-2», var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
   }
 }
 @-webkit-keyframes fa-shake {
@@ -12000,5 +12025,8 @@ readers do not read off random characters that represent icons */
   }
   .md\:flex{
     display: flex;
+  }
+  .md\:hidden{
+    display: none;
   }
 }

@@ -7,8 +7,8 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header id="site-header" class="bg-white">
-	<div class="flex items-center max-w-8xl p-4 mx-auto space-x-14">
+<header id="site-header" class="bg-white border-t-4 border-primary-500">
+	<div class="flex justify-between items-center max-w-8xl p-4 mx-auto space-x-14">
 		<div class="flex-none">
 			<?php venus_site_logo(); ?>
 		</div>
@@ -32,5 +32,20 @@
 				venus_header_button();
 			} ?>
 		</div>
+		<div class="md:hidden">
+			<div>
+				<span class="sr-only"><?php _e( 'Open menu', 'venus' ); ?></span>
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+	</div>
+	<div class="md:hidden max-w-8xl p-4 mx-auto">
+		<?php if ( has_nav_menu( 'primary' ) ) {
+			wp_nav_menu( array(
+					'menu_class'     => 'primary-menu-mobile space-y-2',
+					'theme_location' => 'primary',
+					'depth'          => 2
+			) );
+		} ?>
 	</div>
 </header>
