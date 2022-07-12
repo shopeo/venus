@@ -47,7 +47,7 @@ if ( ! function_exists( 'venus_support' ) ) {
 				)
 		);
 
-		load_theme_textdomain( 'venus' );
+		load_theme_textdomain( 'venus', get_template_directory() . '/languages' );
 
 		add_theme_support( 'align-wide' );
 		add_theme_support( 'responsive-embeds' );
@@ -125,7 +125,7 @@ add_action( 'wp_enqueue_scripts', 'venus_non_latin_languages' );
 if ( ! function_exists( 'venus_menus' ) ) {
 	function venus_menus() {
 		$locations = array(
-				'primary' => __( 'Primary', 'venus' )
+				'primary' => __( 'Primary Menu', 'venus' )
 		);
 		register_nav_menus( $locations );
 	}

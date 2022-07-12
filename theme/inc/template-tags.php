@@ -78,6 +78,39 @@ if ( ! function_exists( 'venus_header_button' ) ) {
 	}
 }
 
+if ( ! function_exists( 'venus_technical_support' ) ) {
+	function venus_technical_support( $display = true ) {
+		$link = sprintf(
+			__( 'Technical support by <a target="_blank" href="%s">SHOPEO</a>.', 'venus' ),
+			'https://www.shopeo.cn/'
+		);
+		if ( ! $display ) {
+			return $link;
+		}
+		echo $link;
+	}
+}
+
+if ( ! function_exists( 'venus_icp' ) ) {
+	function venus_icp( $display = true ) {
+		$link = sprintf(
+			'<a target="_blank" href="%1$s">%2$s</a>',
+			'https://beian.miit.gov.cn/',
+			'粤ICP备15002054号'
+		);
+		if ( ! $display ) {
+			return $link;
+		}
+		echo $link;
+	}
+}
+
+if ( ! function_exists( 'venus_social_media' ) ) {
+	function venus_social_media( $display = true ) {
+
+	}
+}
+
 if ( ! function_exists( 'venus_is_comment_by_post_author' ) ) {
 	function venus_is_comment_by_post_author( $comment = null ) {
 
