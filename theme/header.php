@@ -39,7 +39,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="md:hidden max-w-8xl p-4 mx-auto">
+	<div class="md:hidden max-w-8xl p-4 mx-auto space-y-4">
 		<?php if ( has_nav_menu( 'primary' ) ) {
 			wp_nav_menu( array(
 					'menu_class'     => 'primary-menu-mobile space-y-2',
@@ -47,5 +47,17 @@
 					'depth'          => 2
 			) );
 		} ?>
+		<div class="space-y-4">
+			<?php $enable_header_search = get_theme_mod( 'enable_header_search', true );
+			if ( $enable_header_search === true ) {
+				get_search_form();
+			}
+			?>
+			<?php $enable_header_button = get_theme_mod( 'enable_header_button', true );
+			$header_button_text         = get_theme_mod( 'header_button_text' );
+			if ( $enable_header_button === true && $header_button_text ) {
+				venus_header_button();
+			} ?>
+		</div>
 	</div>
 </header>
