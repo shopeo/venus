@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header id="site-header" class="bg-white border-t-4 border-primary-500">
+<header x-data="{ mobile_menu_open: false}" id="site-header" class="bg-white border-t-4 border-primary-500">
 	<div class="flex justify-between items-center max-w-8xl p-4 mx-auto space-x-14">
 		<div class="flex-none">
 			<?php venus_site_logo(); ?>
@@ -33,13 +33,14 @@
 			} ?>
 		</div>
 		<div class="md:hidden">
-			<div>
+			<div @click="mobile_menu_open =! mobile_menu_open">
 				<span class="sr-only"><?php _e( 'Open menu', 'venus' ); ?></span>
 				<i class="fas fa-bars"></i>
 			</div>
 		</div>
 	</div>
-	<div class="md:hidden max-w-8xl p-4 mx-auto space-y-4">
+	<div x-show="mobile_menu_open" x-transition @click.away="mobile_menu_open = false"
+		 class="md:hidden max-w-8xl p-4 border-t-2 border-neutral-200 mx-auto space-y-4">
 		<?php if ( has_nav_menu( 'primary' ) ) {
 			wp_nav_menu( array(
 					'menu_class'     => 'primary-menu-mobile space-y-2',

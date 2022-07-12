@@ -4,31 +4,33 @@
   }
 }
 
-.primary-menu {
-  .current-menu-item, .current-menu-parent {
-	& > a, &::after, .current-menu-item a {
-	  @apply text-primary-500;
-	}
-  }
-
+.primary-menu, .primary-menu-mobile {
   a {
 	&:hover {
 	  @apply text-primary-500;
 	}
   }
 
-  & > .menu-item-has-children {
-	&::after {
-	  content: '\f0d7';
-	  @apply fas;
-	  @apply mr-1;
+  .current-menu-item, .current-menu-parent {
+	& > a, .current-menu-item a {
+	  @apply text-primary-500;
 	}
+  }
 
-	&:hover {
-	  & > a, &::after {
-		@apply text-primary-500;
+  & > .menu-item-has-children {
+	& > a {
+	  &::after {
+		content: '\f0d7';
+		@apply fas;
+		@apply ml-2;
 	  }
+	}
+  }
+}
 
+.primary-menu {
+  & > .menu-item-has-children {
+	&:hover {
 	  .sub-menu {
 		@apply space-y-1;
 		@apply block;
@@ -37,6 +39,18 @@
 		@apply p-4;
 		@apply rounded;
 		@apply shadow;
+	  }
+	}
+  }
+}
+
+.primary-menu-mobile {
+  & > .menu-item-has-children {
+	&:hover {
+	  .sub-menu {
+		@apply pl-4;
+		@apply space-y-1;
+		@apply block;
 	  }
 	}
   }
