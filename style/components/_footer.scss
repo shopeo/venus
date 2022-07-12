@@ -1,0 +1,8 @@
+#site-footer {
+  a {
+	&:hover {
+	  @apply text-primary-200;
+	  @apply underline;
+	}
+  }
+}

@@ -14,5 +14,13 @@ $fa-font-path: "./assets/fonts";
   max-width: 90rem;
 }
 
+a {
+  &:hover {
+	@apply text-primary-500;
+  }
+}
+
 @import "components/components";
 @import "blocks/blocks";
+@import "shortcodes/shortcodes";
+@import "widgets/widgets";

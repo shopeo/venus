@@ -4120,11 +4120,18 @@ select{
 .border-2{
   border-width: 2px;
 }
+.border-t{
+  border-top-width: 1px;
+}
 .border-t-4{
   border-top-width: 4px;
 }
 .border-t-2{
   border-top-width: 2px;
+}
+.border-neutral-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(115 115 115 / var(--tw-border-opacity));
 }
 .border-primary-500{
   border-color: var(--primary-color-500);
@@ -4136,6 +4143,10 @@ select{
 .border-neutral-50{
   --tw-border-opacity: 1;
   border-color: rgb(250 250 250 / var(--tw-border-opacity));
+}
+.bg-neutral-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity));
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -4164,13 +4175,13 @@ select{
 .capitalize{
   text-transform: capitalize;
 }
-.text-neutral-400{
-  --tw-text-opacity: 1;
-  color: rgb(163 163 163 / var(--tw-text-opacity));
-}
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-neutral-400{
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity));
 }
 .placeholder-neutral-400::-moz-placeholder{
   --tw-placeholder-opacity: 1;
@@ -11992,11 +12003,11 @@ readers do not read off random characters that represent icons */
 .max-w-8xl {
   max-width: 90rem;
 }
+a:hover{
+  color: var(--primary-color-500);
+}
 .menu-item .sub-menu{
   display: none;
-}
-.primary-menu a:hover,  .primary-menu-mobile a:hover{
-  color: var(--primary-color-500);
 }
 .primary-menu .current-menu-item > a,  .primary-menu .current-menu-item .current-menu-item a,  .primary-menu .current-menu-parent > a,  .primary-menu .current-menu-parent .current-menu-item a,  .primary-menu-mobile .current-menu-item > a,  .primary-menu-mobile .current-menu-item .current-menu-item a,  .primary-menu-mobile .current-menu-parent > a,  .primary-menu-mobile .current-menu-parent .current-menu-item a{
   color: var(--primary-color-500);
@@ -12047,8 +12058,17 @@ readers do not read off random characters that represent icons */
 .primary-menu-mobile > .menu-item-has-children:hover .sub-menu{
   display: block;
 }
+#site-footer a:hover{
+  color: var(--primary-color-200);
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
 .hover\:bg-primary-600:hover{
   background-color: var(--primary-color-600);
+}
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .focus\:border-primary-500:focus{
   border-color: var(--primary-color-500);
