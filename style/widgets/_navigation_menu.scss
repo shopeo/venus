@@ -1,0 +1,10 @@
+#footer-sidebar {
+  .wp-block-column {
+	.widget_nav_menu {
+	  .widgettitle {
+		@apply font-medium;
+		@apply mb-2;
+	  }
+	}
+  }
+}

@@ -240,3 +240,27 @@ if ( ! function_exists( 'venus_head' ) ) {
 }
 
 add_action( 'wp_head', 'venus_head' );
+
+if ( ! function_exists( 'venus_register_sidebars' ) ) {
+	function venus_register_sidebars() {
+		register_sidebar( array(
+				'id'            => 'primary',
+				'name'          => __( 'Primary Sidebar', 'venus' ),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</div>',
+				'before_title'  => '<h3>',
+				'after_title'   => '</h3>'
+		) );
+		register_sidebar( array(
+				'id'            => 'footer',
+				'name'          => __( 'Footer Sidebar', 'venus' ),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</div>',
+				'before_title'  => '<h3>',
+				'after_title'   => '</h3>'
+		) );
+	}
+}
+
+add_action( 'widgets_init', 'venus_register_sidebars' );
+
