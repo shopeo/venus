@@ -21,5 +21,19 @@
 - [ ] webkul-micron
 - [ ] counterup2
 
-## About
+## Plugins
 
+- [ ] https://www.sliderrevolution.com/
+- [ ] https://layerslider.com/
+- [ ] https://memberpress.com/
+- [ ] aifanfan
+- [ ] sendcloud-newsletter
+- [ ] wp-multilang
+- [ ] WooCommerce
+- [ ] WooCommerce Memberships
+- [ ] Easy Table of Contents
+- [ ] Heroic Table of Contents
+- [ ] Ultimate Blocks
+- [ ] Hubspot
+
+## About
