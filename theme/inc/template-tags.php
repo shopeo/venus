@@ -112,7 +112,16 @@ if ( ! function_exists( 'venus_icp' ) ) {
 if ( ! function_exists( 'venus_social_media' ) ) {
 	function venus_social_media( $display = true ) {
 		$html = '';
-
+		$a    = '<a href="%1$s" target="_blank" rel="nofollow">%2$s</a>';
+		$i    = '<i class="%s"></i>';
+		foreach ( VenusFooterCustomize::$social_media as $media ) {
+			$value = get_theme_mod( 'social_media_' . $media['id'] );
+			if ( $value ) {
+				$icon = sprintf( $i, $media['class'] );
+				$link = sprintf( $a, $value, $icon );
+				$html .= $link;
+			}
+		}
 		if ( ! $display ) {
 			return $html;
 		}

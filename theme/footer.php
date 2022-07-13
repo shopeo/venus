@@ -9,15 +9,8 @@
 			<?php venus_technical_support(); ?>
 			<?php venus_icp(); ?>
 		</div>
-		<div class="space-x-4 text-center md:text-right">
-			<a href="#" target="_blank" rel="nofollow"><i class="fab fa-telegram"></i></a>
-			<a href="#" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a>
-			<a href="#" target="_blank" rel="nofollow"><i class="fab fa-facebook"></i></a>
-			<a href="#" target="_blank" rel="nofollow"><i class="fab fa-instagram"></i></a>
-			<a href="#" target="_blank" rel="nofollow"><i class="fab fa-pinterest"></i></a>
-			<a href="#" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a>
-			<a href="#" target="_blank" rel="nofollow"><i class="fab fa-product-hunt"></i></a>
-			<a href="#" target="_blank" rel="nofollow"><i class="fab fa-whatsapp"></i></a>
+		<div class="social-media space-x-4 text-center md:text-right">
+			<?php venus_social_media(); ?>
 		</div>
 	</div>
 </footer>
