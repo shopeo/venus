@@ -79,6 +79,7 @@ if ( ! class_exists( 'VenusCustomize' ) ) {
 			$wp_customize->add_setting( 'header_button_text', array(
 				'capability' => 'edit_theme_options',
 				'default'    => __( 'get started', 'venus' ),
+				'transport'  => 'postMessage',
 			) );
 
 			$wp_customize->add_control( 'header_button_text', array(
@@ -91,6 +92,7 @@ if ( ! class_exists( 'VenusCustomize' ) ) {
 			$wp_customize->add_setting( 'header_button_link', array(
 				'capability' => 'edit_theme_options',
 				'default'    => '#',
+				'transport'  => 'postMessage',
 			) );
 
 			$wp_customize->add_control( 'header_button_link', array(

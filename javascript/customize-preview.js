@@ -49,4 +49,19 @@
 			document.body.style.setProperty('--primary-color-900', to);
 		});
 	});
+	api('header_button_text', function (value) {
+		value.bind(function (to) {
+			$('#site-header .header-button a').text(to);
+		});
+	});
+	api('header_button_link', function (value) {
+		value.bind(function (to) {
+			$('#site-header .header-button a').attr('href', to);
+		});
+	});
+	api('footer_icp_text', function (value) {
+		value.bind(function (to) {
+			$('#site-footer .icp').text(to);
+		});
+	});
 })(jQuery, wp.customize, _);

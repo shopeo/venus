@@ -93,19 +93,23 @@ if ( ! function_exists( 'venus_technical_support' ) ) {
 
 if ( ! function_exists( 'venus_icp' ) ) {
 	function venus_icp( $display = true ) {
-		$link = sprintf(
-			'<a target="_blank" href="%1$s">%2$s</a>',
-			'https://beian.miit.gov.cn/',
-			'粤ICP备15002054号'
-		);
-		if ( ! $display ) {
-			return $link;
+		$enable_footer_icp = get_theme_mod( 'enable_footer_icp', false );
+		$icp_text          = get_theme_mod( 'footer_icp_text' );
+		if ( $enable_footer_icp === true && $icp_text ) {
+			$link = sprintf(
+				'<a class="icp" target="_blank" href="%1$s">%2$s</a>',
+				'https://beian.miit.gov.cn/',
+				$icp_text
+			);
+			if ( ! $display ) {
+				return $link;
+			}
+			echo $link;
 		}
-		echo $link;
 	}
 }
 
-if ( ! function_exists( '' ) ) {
+if ( ! function_exists( 'venus_social_media' ) ) {
 	function venus_social_media( $display = true ) {
 		$html = '';
 
@@ -113,12 +117,6 @@ if ( ! function_exists( '' ) ) {
 			return $html;
 		}
 		echo $html;
-	}
-}
-
-if ( ! function_exists( 'venus_social_media' ) ) {
-	function venus_social_media( $display = true ) {
-
 	}
 }
 
