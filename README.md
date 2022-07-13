@@ -1,6 +1,7 @@
 # Venus
 
 ## Integrated
+
 - [x] tailwindcss
 - [x] fontawesome-free
 - [x] animate.css
@@ -14,6 +15,11 @@
 - [x] @ryangjchandler/alpine-clipboard
 - [ ] typed.js
 - [ ] lazysizes
+- [ ] @ciar4n/izmir
+- [ ] hover.css
+- [ ] swiper
+- [ ] webkul-micron
+- [ ] counterup2
 
 ## About
 

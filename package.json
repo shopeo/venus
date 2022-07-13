@@ -28,6 +28,7 @@
     "@alpinejs/mask": "^3.10.2",
     "@alpinejs/morph": "^3.10.2",
     "@alpinejs/persist": "^3.10.2",
+    "@ciar4n/izmir": "^1.0.1",
     "@fortawesome/fontawesome-free": "^6.1.1",
     "@ryangjchandler/alpine-clipboard": "^2.2.0",
     "@tailwindcss/aspect-ratio": "^0.4.0",
@@ -37,6 +38,8 @@
     "alpinejs": "^3.10.2",
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.7",
+    "counterup2": "^2.0.2",
+    "hover.css": "^2.3.2",
     "laravel-mix": "^6.0.49",
     "lazysizes": "^5.3.2",
     "luxon": "^3.0.1",
@@ -46,7 +49,9 @@
     "rtlcss": "^3.5.0",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.2",
+    "swiper": "^8.3.0",
     "tailwindcss": "^3.1.5",
-    "typed.js": "^2.0.12"
+    "typed.js": "^2.0.12",
+    "webkul-micron": "^1.1.6"
   }
 }
