@@ -12080,4 +12080,10 @@ a:hover{
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
+  .md\:text-left{
+    text-align: right;
+  }
+  .md\:text-right{
+    text-align: left;
+  }
 }
