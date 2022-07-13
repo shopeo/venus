@@ -12065,7 +12065,7 @@ a:hover{
   display: block;
 }
 #site-footer a:hover{
-  color: var(--primary-color-200);
+  color: var(--primary-color-300);
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
