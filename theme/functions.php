@@ -264,3 +264,26 @@ if ( ! function_exists( 'venus_register_sidebars' ) ) {
 
 add_action( 'widgets_init', 'venus_register_sidebars' );
 
+if ( ! function_exists( 'venus_block_editor_styles' ) ) {
+	function venus_block_editor_styles() {
+
+	}
+}
+
+add_action( 'enqueue_block_editor_assets', 'venus_block_editor_styles', 1, 1 );
+
+if ( ! function_exists( 'venus_classic_editor_styles' ) ) {
+	function venus_classic_editor_styles() {
+
+	}
+}
+
+add_action( 'init', 'venus_classic_editor_styles' );
+
+if ( ! function_exists( 'venus_add_classic_editor_customizer_styles' ) ) {
+	function venus_add_classic_editor_customizer_styles( $mce_init ) {
+
+	}
+}
+
+add_filter( 'tiny_mce_before_init', 'venus_add_classic_editor_customizer_styles' );

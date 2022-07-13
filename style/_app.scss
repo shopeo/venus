@@ -20,6 +20,38 @@ a {
   }
 }
 
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+  @apply font-medium;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: auto;
+}
+
 @import "components/components";
 @import "blocks/blocks";
 @import "shortcodes/shortcodes";
