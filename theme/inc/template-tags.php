@@ -105,6 +105,17 @@ if ( ! function_exists( 'venus_icp' ) ) {
 	}
 }
 
+if ( ! function_exists( '' ) ) {
+	function venus_social_media( $display = true ) {
+		$html = '';
+
+		if ( ! $display ) {
+			return $html;
+		}
+		echo $html;
+	}
+}
+
 if ( ! function_exists( 'venus_social_media' ) ) {
 	function venus_social_media( $display = true ) {
 

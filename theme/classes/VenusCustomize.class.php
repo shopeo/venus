@@ -99,6 +99,11 @@ if ( ! class_exists( 'VenusCustomize' ) ) {
 				'priority' => 10,
 				'label'    => __( 'Button link in header', 'venus' ),
 			) );
+			/**
+			 * Footer
+			 */
+			VenusFooterCustomize::register( $wp_customize );
+
 		}
 
 		public static function sanitize_accent_accessible_colors( $value ) {

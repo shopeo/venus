@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Venus 0.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/theme\n"
 "POT-Creation-Date: 2022-07-12T13:52:33+08:00\n"
-"PO-Revision-Date: 2022-07-12 13:58+0800\n"
+"PO-Revision-Date: 2022-07-12 16:15+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -125,7 +125,7 @@ msgstr "打开菜单"
 
 #: inc/template-tags.php:84
 msgid "Technical support by <a target=\"_blank\" href=\"%s\">SHOPEO</a>."
-msgstr "技术支持 <a target=“_blank” href=“%s”>SHOPEO</a>."
+msgstr "由 <a target=\"_blank\" href=\"%s\">SHOPEO</a> 提供技术支持。"
 
 #: searchform.php:11
 msgid "Search for:"
