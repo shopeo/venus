@@ -1,5 +1,5 @@
 <footer id="site-footer" class="bg-gray-700 text-white">
-	<div class="max-w-8xl p-8 mx-auto">
+	<div class="max-w-8xl px-4 py-8 mx-auto">
 		<div id="footer-sidebar" class="sidebar">
 			<?php dynamic_sidebar( 'footer' ); ?>
 		</div>

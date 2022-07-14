@@ -4143,11 +4143,16 @@ select{
 .bg-primary-500{
   background-color: var(--primary-color-500);
 }
-.p-8{
-  padding: 2rem;
-}
 .p-4{
   padding: 1rem;
+}
+.px-4{
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .py-1{
   padding-top: 0.25rem;
@@ -4533,12 +4538,12 @@ select{
 }
 @-webkit-keyframes fa-flip {
   50% {
-    transform: rotate3d(var«-1107:1», var«1107:-2», var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+    transform: rotate3d(var«-1106:1», var«1106:-2», var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
   }
 }
 @keyframes fa-flip {
   50% {
-    transform: rotate3d(var«-1107:1», var«1107:-2», var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+    transform: rotate3d(var«-1106:1», var«1106:-2», var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
   }
 }
 @-webkit-keyframes fa-shake {
@@ -12072,12 +12077,12 @@ nav ul, nav ol, .menu ul, .menu ol {
   margin-right: auto;
   margin-left: auto;
 }
+.wp-block-columns{
+  margin-bottom: 0px;
+}
 .widget .widgettitle{
   font-weight: 500;
   margin-bottom: 0.5rem;
-}
-#footer-sidebar .wp-block-columns{
-  margin-bottom: 0px;
 }
 .widget_nav_menu ul, .widget_nav_menu ol {
   list-style: none;

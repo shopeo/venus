@@ -4159,11 +4159,16 @@ select{
 .bg-primary-500{
   background-color: var(--primary-color-500);
 }
-.p-8{
-  padding: 2rem;
-}
 .p-4{
   padding: 1rem;
+}
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .py-1{
   padding-top: 0.25rem;
@@ -12088,12 +12093,12 @@ nav ul, nav ol, .menu ul, .menu ol {
   margin-left: auto;
   margin-right: auto;
 }
+.wp-block-columns{
+  margin-bottom: 0px;
+}
 .widget .widgettitle{
   font-weight: 500;
   margin-bottom: 0.5rem;
-}
-#footer-sidebar .wp-block-columns{
-  margin-bottom: 0px;
 }
 .widget_nav_menu ul, .widget_nav_menu ol {
   list-style: none;

@@ -23,11 +23,11 @@
 
 ## Plugins
 
+- [ ] aifanfan
+- [ ] sendcloud-newsletter
 - [ ] https://www.sliderrevolution.com/
 - [ ] https://layerslider.com/
 - [ ] https://memberpress.com/
-- [ ] aifanfan
-- [ ] sendcloud-newsletter
 - [ ] wp-multilang
 - [ ] WooCommerce
 - [ ] WooCommerce Memberships
@@ -39,6 +39,6 @@
 
 ## About
 
-## Ref
+## Related
 
 https://github.com/TGMPA/TGM-Plugin-Activation/
