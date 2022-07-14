@@ -17,3 +17,9 @@ if ( ! function_exists( 'venus_generate_css' ) ) {
 		return $return;
 	}
 }
+
+if ( ! function_exists( 'venus_get_customizer_css' ) ) {
+	function venus_get_customizer_css( $type = 'front-end' ) {
+		return ob_get_clean();
+	}
+}
