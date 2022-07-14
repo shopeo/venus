@@ -12012,6 +12012,18 @@ readers do not read off random characters that represent icons */
 a:hover{
   color: var(--primary-color-500);
 }
+h6{
+  font-weight: 500;
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: auto;
+}
+nav ul, nav ol, .menu ul, .menu ol {
+  list-style: none;
+}
 .menu-item .sub-menu{
   display: none;
 }
@@ -12069,18 +12081,22 @@ a:hover{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
-#footer-sidebar .wp-block-columns,  #footer-sidebar .wp-block-column{
-  margin-bottom: 0px;
+.wp-block-image .aligncenter{
+  text-align: center;
 }
-#footer-sidebar .wp-block-column{
-  margin-bottom: 0.5rem;
+.wp-block-image .aligncenter img{
+  margin-left: auto;
+  margin-right: auto;
 }
-#footer-sidebar .wp-block-column .widget_nav_menu .widgettitle{
+.widget .widgettitle{
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
-#footer-sidebar .wp-block-column p{
-  width: 80%;
+#footer-sidebar .wp-block-columns{
+  margin-bottom: 0px;
+}
+.widget_nav_menu ul, .widget_nav_menu ol {
+  list-style: none;
 }
 .hover\:bg-primary-600:hover{
   background-color: var(--primary-color-600);
@@ -12106,6 +12122,9 @@ a:hover{
   }
   .md\:hidden{
     display: none;
+  }
+  .md\:w-4\/5{
+    width: 80%;
   }
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;

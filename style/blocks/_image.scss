@@ -1,0 +1,8 @@
+.wp-block-image {
+  .aligncenter {
+	@apply text-center;
+	img {
+	  @apply mx-auto;
+	}
+  }
+}

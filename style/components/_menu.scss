@@ -1,3 +1,9 @@
+nav, .menu {
+  ul, ol {
+	list-style: none;
+  }
+}
+
 .menu-item {
   .sub-menu {
 	@apply hidden;

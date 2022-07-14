@@ -14,7 +14,7 @@
 		</div>
 		<?php if ( has_nav_menu( 'primary' ) ) {
 			wp_nav_menu( array(
-					'container_class' => 'hidden md:block grow',
+					'container_class' => 'hidden md:block grow menu',
 					'menu_class'      => 'primary-menu flex space-x-10',
 					'theme_location'  => 'primary',
 					'depth'           => 2
@@ -43,9 +43,10 @@
 		 class="md:hidden max-w-8xl p-4 border-t-2 border-neutral-200 mx-auto space-y-4">
 		<?php if ( has_nav_menu( 'primary' ) ) {
 			wp_nav_menu( array(
-					'menu_class'     => 'primary-menu-mobile space-y-2',
-					'theme_location' => 'primary',
-					'depth'          => 2
+					'container_class' => 'menu',
+					'menu_class'      => 'primary-menu-mobile space-y-2',
+					'theme_location'  => 'primary',
+					'depth'           => 2
 			) );
 		} ?>
 		<div class="space-y-4">
