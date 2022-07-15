@@ -12020,6 +12020,16 @@ readers do not read off random characters that represent icons */
 .max-w-8xl {
   max-width: 90rem;
 }
+::-moz-selection{
+  background-color: var(--primary-color-500);
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+::selection{
+  background-color: var(--primary-color-500);
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 a:hover{
   color: var(--primary-color-500);
 }

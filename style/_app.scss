@@ -14,6 +14,11 @@ $fa-font-path: "./assets/fonts";
   max-width: 90rem;
 }
 
+::selection {
+  @apply bg-primary-500;
+  @apply text-white;
+}
+
 a {
   &:hover {
 	@apply text-primary-500;
