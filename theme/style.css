@@ -12102,6 +12102,28 @@ nav ul, nav ol, .menu ul, .menu ol {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
+.subscribe-form p{
+  margin-bottom: 0.5rem;
+}
+.subscribe-form label {
+  display: block;
+}
+.subscribe-form input{
+  width: 100%;
+  border-radius: 0.25rem;
+}
+.subscribe-form button{
+  width: 100%;
+  background-color: var(--primary-color-500);
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  border-radius: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.subscribe-form button:hover{
+  background-color: var(--primary-color-600);
+}
 .wp-block-image .aligncenter{
   text-align: center;
 }

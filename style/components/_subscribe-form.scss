@@ -1,0 +1,25 @@
+.subscribe-form {
+  p {
+	@apply mb-2;
+  }
+
+  label {
+	display: block;
+  }
+
+  input {
+	@apply w-full;
+	@apply rounded;
+  }
+
+  button {
+	@apply w-full;
+	@apply bg-primary-500;
+	@apply text-white;
+	@apply rounded;
+	@apply py-2;
+	&:hover {
+	  @apply bg-primary-600;
+	}
+  }
+}
