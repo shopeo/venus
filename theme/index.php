@@ -25,27 +25,28 @@
 					$archive_subtitle = get_the_archive_description();
 				}
 				if ( $archive_title || $archive_subtitle ) { ?>
-					<div>
-						<div>
+					<div class="archive-header has-text-align-center header-footer-group">
+						<div class="archive-header-inner section-inner medium">
 							<?php if ( $archive_title ) { ?>
-								<h1><?php echo wp_kses_post( $archive_title ); ?></h1>
+								<h1 class="archive-title"><?php echo wp_kses_post( $archive_title ); ?></h1>
 							<?php }
 							if ( $archive_subtitle ) { ?>
-								<div><?php echo wp_kses_post( wpautop( $archive_title ) ); ?></div>
+								<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post( wpautop( $archive_subtitle ) ); ?></div>
 							<?php } ?>
 						</div>
 					</div>
 				<?php }
 				if ( have_posts() ) {
-					$i = 0;
+					if ( ! is_singular() ) { ?>
+						<div class="grid md:grid-cols-3 gap-4">
+					<?php }
 					while ( have_posts() ) {
-						$i ++;
-						if ( $i > 1 ) {
-							echo '<hr/>';
-						}
 						the_post();
 						get_template_part( 'template-parts/content', get_post_type() );
 					}
+					if ( ! is_singular() ) { ?>
+						</div>
+					<?php }
 				} elseif ( is_search() ) { ?>
 					<div>
 						<?php get_search_form( array( 'aria_label' => __( 'search again', 'venus' ) ) ); ?>

@@ -8,10 +8,10 @@
 	<div class="post-inner">
 		<div class="entry-content">
 			<?php
-			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
+			if ( is_search() || ! is_singular() ) {
 				the_excerpt();
 			} else {
-				the_content( 'Continue reading', 'venus' );
+				the_content( __( 'Continue reading', 'venus' ) );
 			}
 			?>
 		</div>
@@ -23,7 +23,9 @@
 				'link_before' => '<span class="page-number">',
 				'link_after'  => '</span>'
 		) );
-		edit_post_link();
+		if ( is_singular() ) {
+			edit_post_link();
+		}
 		venus_the_post_meta( get_the_ID(), 'single-bottom' );
 		if ( post_type_supports( get_post_type( get_the_ID() ), 'author' ) && is_single() ) {
 			get_template_part( 'template-parts/entry-author-bio' );

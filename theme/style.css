@@ -4099,6 +4099,9 @@ input, .focus\:ring-0{
 .gap-8{
   gap: 2rem;
 }
+.gap-4{
+  gap: 1rem;
+}
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -12177,6 +12180,9 @@ nav ul, nav ol, .menu ul, .menu ol {
 .subscribe-form button:hover{
   background-color: var(--primary-color-600);
 }
+.post-meta-wrapper ul {
+  list-style: none;
+}
 .wp-block-image .aligncenter{
   text-align: center;
 }
@@ -12236,6 +12242,9 @@ nav ul, nav ol, .menu ul, .menu ol {
   }
   .md\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
