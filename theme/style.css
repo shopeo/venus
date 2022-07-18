@@ -12189,6 +12189,38 @@ nav ul, nav ol, .menu ul, .menu ol {
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.pagination-wrapper{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.pagination-wrapper .nav-links{
+  display: inline-block;
+}
+.pagination-wrapper .nav-links > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.pagination-wrapper .nav-links .page-numbers{
+  color: var(--primary-color-500);
+  display: inline-block;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+}
+.pagination-wrapper .nav-links .page-numbers.current{
+  background-color: var(--primary-color-500);
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.pagination-wrapper .nav-links .page-numbers:hover{
+  background-color: var(--primary-color-500);
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 .wp-block-image .aligncenter{
   text-align: center;
 }
