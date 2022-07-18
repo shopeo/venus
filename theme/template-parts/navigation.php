@@ -15,7 +15,7 @@ if ( $next_post || $prev_post ) {
 			<?php
 			if ( $prev_post ) { ?>
 				<a class="previous-post" href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>">
-					<span class="arrow" aria-hidden="true">&larr;</span>
+					<i class="arrow fas fa-angle-left"></i>
 					<span class="title">
 						<span class="title-inner">
 							<?php echo wp_kses_post( get_the_title( $prev_post->ID ) ); ?>
@@ -31,7 +31,7 @@ if ( $next_post || $prev_post ) {
 							<?php echo wp_kses_post( get_the_title( $next_post->ID ) ); ?>
 						</span>
 					</span>
-					<span class="arrow" aria-hidden="true">&rarr;</span>
+					<i class="arrow fas fa-angle-right"></i>
 				</a>
 			<?php }
 			?>

@@ -4030,6 +4030,10 @@ input, .focus\:ring-0{
 .relative{
   position: relative;
 }
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+}
 .mx-auto{
   margin-right: auto;
   margin-left: auto;

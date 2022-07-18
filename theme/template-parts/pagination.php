@@ -1,7 +1,7 @@
 <?php
-$prev_text = sprintf( '%s <span class="nav-prev-text">%s</span>', '<span aria-hidden="true">&larr;</span>', __( 'Newer <span class="nav-short">Posts</span>', 'venus' ) );
+$prev_text = sprintf( '%s <span class="nav-prev-text">%s</span>', '<i class="arrow fas fa-angle-left"></i>', __( 'Newer <span class="nav-short">Posts</span>', 'venus' ) );
 
-$next_text = sprintf( '<span class="nav-next-text">%s</span> %s', __( 'Older <span class="nav-short">Posts</span>', 'venus' ), '<span aria-hidden="true">&rarr;</span>' );
+$next_text = sprintf( '<span class="nav-next-text">%s</span> %s', __( 'Older <span class="nav-short">Posts</span>', 'venus' ), '<i class="arrow fas fa-angle-right"></i>' );
 
 $posts_pagination = get_the_posts_pagination(
 		array(
