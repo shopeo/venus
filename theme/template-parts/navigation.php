@@ -8,7 +8,7 @@ if ( $next_post || $prev_post ) {
 	} else {
 		$pagination_classes = ' only-one only-next';
 	} ?>
-	<nav class="pagination-single section-inner<?php echo esc_attr( $pagination_classes ); ?>"
+	<div class="pagination-single section-inner<?php echo esc_attr( $pagination_classes ); ?>"
 		 aria-label="<?php esc_attr_e( 'Post', 'venus' ); ?>">
 		<hr class="styled-separator is-style-wide" aria-hidden="true"/>
 		<div class="pagination-single-inner">
@@ -37,5 +37,5 @@ if ( $next_post || $prev_post ) {
 			?>
 		</div>
 		<hr class="styled-separator is-style-wide" aria-hidden="true"/>
-	</nav>
+	</div>
 <?php }
