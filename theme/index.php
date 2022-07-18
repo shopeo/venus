@@ -25,7 +25,7 @@
 					$archive_subtitle = get_the_archive_description();
 				}
 				if ( $archive_title || $archive_subtitle ) { ?>
-					<header>
+					<div>
 						<div>
 							<?php if ( $archive_title ) { ?>
 								<h1><?php echo wp_kses_post( $archive_title ); ?></h1>
@@ -34,7 +34,7 @@
 								<div><?php echo wp_kses_post( wpautop( $archive_title ) ); ?></div>
 							<?php } ?>
 						</div>
-					</header>
+					</div>
 				<?php }
 				if ( have_posts() ) {
 					$i = 0;
