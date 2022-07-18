@@ -1,7 +1,7 @@
 <?php
-$prev_text = sprintf( '%s <span class="nav-prev-text">%s</span>', '<i class="arrow fas fa-angle-left"></i>', __( 'Prev', 'venus' ) );
+$prev_text = sprintf( '<span class="nav-prev-text">%s</span>', '<i class="arrow fas fa-angle-left"></i>' );
 
-$next_text = sprintf( '<span class="nav-next-text">%s</span> %s', __( 'Next', 'venus' ), '<i class="arrow fas fa-angle-right"></i>' );
+$next_text = sprintf( '<span class="nav-next-text">%s</span>', '<i class="arrow fas fa-angle-right"></i>' );
 
 $posts_pagination = get_the_posts_pagination(
 		array(
@@ -21,7 +21,6 @@ if ( strpos( $posts_pagination, 'next page-numbers' ) === false ) {
 
 if ( $posts_pagination ) { ?>
 	<div class="pagination-wrapper section-inner">
-		<hr class="styled-separator pagination-separator is-style-wide" aria-hidden="true"/>
 		<?php echo $posts_pagination; ?>
 	</div>
 <?php }

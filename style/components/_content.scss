@@ -1,5 +1,7 @@
 .post-meta-wrapper {
   ul {
 	list-style: none;
+	@apply flex;
+	@apply space-x-4;
   }
 }

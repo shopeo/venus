@@ -12182,6 +12182,12 @@ nav ul, nav ol, .menu ul, .menu ol {
 }
 .post-meta-wrapper ul {
   list-style: none;
+  display: flex;
+}
+.post-meta-wrapper ul > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .wp-block-image .aligncenter{
   text-align: center;
