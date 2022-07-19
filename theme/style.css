@@ -12210,7 +12210,7 @@ nav ul, nav ol, .menu ul, .menu ol {
 }
 .grid article .featured-media{
   margin: -1rem;
-  margin-bottom: 0px;
+  margin-bottom: 1rem;
 }
 .grid article .featured-media img{
   width: 100%;
