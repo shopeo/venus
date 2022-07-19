@@ -1,4 +1,6 @@
 .post-meta-wrapper {
+  @apply text-sm;
+  @apply text-neutral-500;
   @apply inline-block;
   @apply w-auto;
   @apply mx-auto;

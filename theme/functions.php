@@ -334,3 +334,16 @@ if ( ! function_exists( 'venus_add_classic_editor_non_latin_styles' ) ) {
 }
 
 add_filter( 'tiny_mce_before_init', 'venus_add_classic_editor_non_latin_styles' );
+
+if ( ! function_exists( 'venus_posts_per_page' ) ) {
+	function venus_posts_per_page( $query ) {
+		if ( ! is_admin() ) {
+			if ( $query->is_search ) {
+				$query->set( 'post_type', 'post' );
+			}
+			$query->set( 'ignore_sticky_posts', 1 );
+		}
+	}
+}
+
+add_action( 'pre_get_posts', 'venus_posts_per_page' );
