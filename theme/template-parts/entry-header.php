@@ -1,9 +1,9 @@
 <?php
 $entry_header_classes = '';
 if ( is_singular() ) {
-	$entry_header_classes .= ' header-footer-group';
+	$entry_header_classes .= ' has-text-align-center header-footer-group';
 } ?>
-<div class="entry-header has-text-align-center<?php echo esc_attr( $entry_header_classes ); ?>">
+<div class="entry-header<?php echo esc_attr( $entry_header_classes ); ?>">
 	<div class="entry-header-inner section-inner medium">
 		<?php
 		$show_categories = apply_filters( 'venus_show_categories_in_entry_header', true );
@@ -20,7 +20,7 @@ if ( is_singular() ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		} else {
 			$intro_text_width = ' thin';
-			the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
+			the_title( '<h4 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
 		}
 
 		if ( has_excerpt() && is_singular() ) { ?>
