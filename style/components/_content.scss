@@ -1,7 +1,27 @@
 .post-meta-wrapper {
+  @apply inline-block;
+  @apply w-auto;
+  @apply mx-auto;
   ul {
 	list-style: none;
 	@apply flex;
 	@apply space-x-4;
+  }
+}
+
+.grid {
+  article {
+	@apply bg-white;
+	@apply p-4;
+	@apply rounded;
+	@apply shadow;
+	.featured-media {
+	  @apply -m-4;
+	  @apply mb-0;
+	  img {
+		@apply w-full;
+		@apply rounded-t;
+	  }
+	}
   }
 }

@@ -4010,7 +4010,7 @@ select{
   outline: 1px solid ButtonText;
   outline: 1px auto -webkit-focus-ring-color;
 }
-.sub-menu{
+.sub-menu, article, .widget{
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -12180,6 +12180,12 @@ nav ul, nav ol, .menu ul, .menu ol {
 .subscribe-form button:hover{
   background-color: var(--primary-color-600);
 }
+.post-meta-wrapper{
+  display: inline-block;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 .post-meta-wrapper ul {
   list-style: none;
   display: flex;
@@ -12188,6 +12194,24 @@ nav ul, nav ol, .menu ul, .menu ol {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.grid article{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1rem;
+  border-radius: 0.25rem;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.grid article .featured-media{
+  margin: -1rem;
+  margin-bottom: 0px;
+}
+.grid article .featured-media img{
+  width: 100%;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 .pagination-wrapper{
   padding-top: 1rem;
@@ -12221,6 +12245,11 @@ nav ul, nav ol, .menu ul, .menu ol {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.pagination-wrapper .nav-links .dots:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  color: var(--primary-color-500);
+}
 .wp-block-image .aligncenter{
   text-align: center;
 }
@@ -12240,6 +12269,15 @@ nav ul, nav ol, .menu ul, .menu ol {
 .widget .widgettitle{
   font-weight: 500;
   margin-bottom: 0.5rem;
+}
+#primary-sidebar .widget{
+  padding: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .widget_nav_menu ul, .widget_nav_menu ol {
   list-style: none;

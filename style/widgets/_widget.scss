@@ -6,3 +6,12 @@
 	@apply mb-2;
   }
 }
+
+#primary-sidebar {
+  .widget {
+	@apply p-4;
+	@apply bg-white;
+	@apply rounded;
+	@apply shadow;
+  }
+}

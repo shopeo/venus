@@ -20,5 +20,12 @@
 		@apply text-white;
 	  }
 	}
+
+	.dots {
+	  &:hover {
+		@apply bg-white;
+		@apply text-primary-500;
+	  }
+	}
   }
 }

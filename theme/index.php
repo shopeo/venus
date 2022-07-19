@@ -1,8 +1,9 @@
 <?php get_header(); ?>
 <main id="site-content">
 	<div class="max-w-8xl mx-auto p-4">
+		<?php if ( ! is_singular() ){ ?>
 		<div class="grid md:grid-cols-5 gap-8">
-			<div class="md:col-span-4">
+			<div class="md:col-span-4"><?php } ?>
 				<?php
 				$archive_title    = '';
 				$archive_subtitle = '';
@@ -48,16 +49,17 @@
 						</div>
 					<?php }
 				} elseif ( is_search() ) { ?>
-					<div>
+					<div class="no-search-results-form section-inner">
 						<?php get_search_form( array( 'aria_label' => __( 'search again', 'venus' ) ) ); ?>
 					</div>
 				<?php }
 				get_template_part( 'template-parts/pagination' );
 				?>
-			</div>
+				<?php if ( ! is_singular() ){ ?></div>
 			<div class="md:col-span-1">
 				<?php get_sidebar(); ?>
 			</div>
+			<?php } ?>
 		</div>
 	</div>
 </main>

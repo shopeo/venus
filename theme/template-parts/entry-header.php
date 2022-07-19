@@ -7,9 +7,12 @@ if ( is_singular() ) {
 	<div class="entry-header-inner section-inner medium">
 		<?php
 		$show_categories = apply_filters( 'venus_show_categories_in_entry_header', true );
-		if ( true === $show_categories && has_category() ) {
-
-		}
+		if ( true === $show_categories && has_category() ) { ?>
+			<div class="entry-categories">
+				<span class="screen-reader-text"><?php _e( 'Categories', 'venus' ); ?></span>
+				<div class="entry-categories-inner"><?php the_category( ' ' ); ?></div>
+			</div>
+		<?php }
 
 		$intro_text_width = '';
 		if ( is_singular() ) {
