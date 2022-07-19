@@ -170,12 +170,12 @@ if ( ! function_exists( 'venus_get_post_meta' ) ) {
 			$post_meta                 = apply_filters( 'venus_post_meta_location_single_top', array(
 					'author',
 					'post-date',
-					'comments',
-					'sticky',
+					'categories'
 			) );
 			$post_meta_wrapper_classes = ' post-meta-single post-meta-single-top';
 		} elseif ( 'single-bottom' === $location ) {
 			$post_meta                 = apply_filters( 'venus_post_meta_location_single_bottom', array(
+					'comments',
 					'tags'
 			) );
 			$post_meta_wrapper_classes = ' post-meta-single post-meta-single-bottom';
@@ -201,7 +201,7 @@ if ( ! function_exists( 'venus_get_post_meta' ) ) {
 								<i class="fas fa-user"></i>
 							</span>
 							<span class="meta-text">
-								<?php printf( __( 'By %s', 'venus' ), '<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>' ) ?>
+								<?php printf( '<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>' ) ?>
 							</span>
 						</li>
 					<?php }
@@ -227,7 +227,7 @@ if ( ! function_exists( 'venus_get_post_meta' ) ) {
 								<i class="fas fa-folder"></i>
 							</span>
 							<span class="meta-text">
-								<?php _ex( 'In', 'A string that is output before one or more categories', 'venus' ); ?><?php the_category( ',' ); ?>
+								<?php the_category( ', ' ); ?>
 							</span>
 						</li>
 					<?php }
