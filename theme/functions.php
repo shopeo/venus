@@ -359,7 +359,7 @@ add_filter( 'excerpt_length', 'venus_custom_excerpt_length', 999 );
 if ( ! function_exists( 'venus_excerpt_more' ) ) {
 	function venus_custom_excerpt_more( $more ) {
 		if ( ! is_single() ) {
-			$more = sprintf( ' <a class="read-more" href="%1$s">%2$s</a>', get_permalink( get_the_ID() ), __( '[Read More]', 'venus' ) );
+			$more = sprintf( ' <a class="read-more" href="%1$s">%2$s</a>', get_permalink( get_the_ID() ), __( '[ Read More ]', 'venus' ) );
 		}
 
 		return $more;
