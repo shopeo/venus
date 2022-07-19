@@ -12,7 +12,7 @@ if ( is_singular() ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		} else {
 			$intro_text_width = ' thin';
-			the_title( '<h5 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h5>' );
+			the_title( '<h4 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h4>' );
 		}
 
 		if ( has_excerpt() && is_singular() ) { ?>
