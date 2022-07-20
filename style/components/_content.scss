@@ -1,7 +1,17 @@
 #site-content {
   .archive-header {
-	.archive-title {
+	@apply bg-primary-500;
+	@apply text-white;
+	@apply text-center;
+	@apply py-14;
+	.archive-header-inner {
+	  .archive-title {
 
+	  }
+
+	  .archive-subtitle {
+
+	  }
 	}
   }
 }
