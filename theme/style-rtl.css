@@ -12183,31 +12183,43 @@ nav ul, nav ol, .menu ul, .menu ol {
   margin-left: calc(1rem * var(--tw-space-x-reverse));
   margin-right: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.post-meta-wrapper.post-meta-single-bottom{
+  width: 100%;
+}
+.post-meta-wrapper.post-meta-single-bottom ul{
+  justify-content: space-between;
+}
 .grid article{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 1rem;
   border-radius: 0.25rem;
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+}
+.grid article:hover{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.grid article .featured-media{
-  margin: -1rem;
-  margin-bottom: 1rem;
-}
 .grid article .featured-media img{
+  margin-bottom: 0.5rem;
   width: 100%;
-  border-top-right-radius: 0.25rem;
-  border-top-left-radius: 0.25rem;
+  border-radius: 0.25rem;
 }
-.grid article .read-more{
-  font-size: 0.75rem;
-  line-height: 1rem;
+.grid article .entry-header .entry-title{
+  margin-bottom: 0.25rem;
+}
+.grid article .post-inner{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.grid article .read-more:hover{
+  color: var(--primary-color-500);
 }
 .pagination-wrapper{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
 .pagination-wrapper .nav-links{
@@ -12271,6 +12283,9 @@ nav ul, nav ol, .menu ul, .menu ol {
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+#primary-sidebar .widget:last-child{
+  margin-bottom: 0px;
+}
 .widget_nav_menu ul, .widget_nav_menu ol {
   list-style: none;
 }
@@ -12318,6 +12333,10 @@ nav ul, nav ol, .menu ul, .menu ol {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .md\:text-left{
     text-align: right;

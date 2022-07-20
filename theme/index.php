@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main id="site-content">
-	<div class="max-w-8xl mx-auto p-4">
+	<div class="max-w-8xl mx-auto p-4 md:py-8">
 		<?php if ( ! is_singular() ){ ?>
 		<div class="grid md:grid-cols-5 gap-8">
 			<div class="md:col-span-4"><?php } ?>

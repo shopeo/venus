@@ -8,6 +8,18 @@
 	list-style: none;
 	@apply flex;
 	@apply space-x-4;
+	.post-tags, .post-categories {
+	  .meta-text {
+
+	  }
+	}
+  }
+
+  &.post-meta-single-bottom {
+	@apply w-full;
+	ul {
+	  @apply justify-between;
+	}
   }
 }
 
@@ -16,18 +28,33 @@
 	@apply bg-white;
 	@apply p-4;
 	@apply rounded;
-	@apply shadow;
+	&:hover {
+	  @apply shadow-md;
+	}
+
 	.featured-media {
-	  @apply -m-4;
-	  @apply mb-4;
 	  img {
+		@apply mb-2;
 		@apply w-full;
-		@apply rounded-t;
+		@apply rounded;
 	  }
 	}
 
+	.entry-header {
+	  .entry-title {
+		@apply mb-1;
+	  }
+	}
+
+	.post-inner {
+	  @apply py-2;
+	  @apply text-sm;
+	}
+
 	.read-more {
-	  @apply text-xs;
+	  &:hover {
+		@apply text-primary-500;
+	  }
 	}
   }
 }

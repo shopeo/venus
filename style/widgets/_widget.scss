@@ -13,5 +13,8 @@
 	@apply bg-white;
 	@apply rounded;
 	@apply shadow;
+	&:last-child {
+	  @apply mb-0;
+	}
   }
 }
