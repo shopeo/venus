@@ -25,3 +25,4 @@ if ( is_singular() ) {
 		?>
 	</div>
 </div>
+

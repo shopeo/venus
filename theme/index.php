@@ -22,7 +22,7 @@
 		$archive_title    = get_the_archive_title();
 		$archive_subtitle = get_the_archive_description();
 	} else {
-		$archive_title = get_the_archive_title();
+		$archive_title = __( 'Blog && News', 'venus' );
 	}
 	if ( ( $archive_title || $archive_subtitle ) && ! is_singular() ) { ?>
 		<div class="archive-header header-footer-group">
