@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Full Width
+ * Template Name: Min Width
  */
 get_header(); ?>
 	<main id="site-content">

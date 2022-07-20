@@ -60,6 +60,7 @@
 
 	.entry-header {
 	  .entry-title {
+		@apply truncate;
 		@apply mb-1;
 	  }
 	}

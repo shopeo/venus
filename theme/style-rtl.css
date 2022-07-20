@@ -12220,6 +12220,9 @@ nav ul, nav ol, .menu ul, .menu ol {
   border-radius: 0.25rem;
 }
 .grid article .entry-header .entry-title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   margin-bottom: 0.25rem;
 }
 .grid article .post-inner{
