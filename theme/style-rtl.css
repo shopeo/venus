@@ -4068,6 +4068,9 @@ input, .focus\:ring-0{
 .w-full{
   width: 100%;
 }
+.max-w-5xl{
+  max-width: 64rem;
+}
 .flex-none{
   flex: none;
 }
@@ -4173,6 +4176,9 @@ input, .focus\:ring-0{
 }
 .pl-10{
   padding-right: 2.5rem;
+}
+.pb-8{
+  padding-bottom: 2rem;
 }
 .text-center{
   text-align: center;
@@ -12263,6 +12269,25 @@ nav ul, nav ol, .menu ul, .menu ol {
 .grid article .read-more:hover{
   color: var(--primary-color-500);
 }
+.comments-wrapper .comment-form-comment label{
+  display: block;
+}
+.comments-wrapper .comment-form-comment textarea{
+  width: 100%;
+  border-radius: 0.25rem;
+}
+.comments-wrapper .form-submit .submit{
+  width: 100%;
+  background-color: var(--primary-color-500);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.comments-wrapper .form-submit .submit:hover{
+  background-color: var(--primary-color-600);
+}
 .pagination-wrapper{
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -12383,6 +12408,9 @@ nav ul, nav ol, .menu ul, .menu ol {
   .md\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+  .md\:pt-8{
+    padding-top: 2rem;
   }
   .md\:text-left{
     text-align: right;
