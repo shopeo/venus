@@ -48,13 +48,21 @@
 	@apply rounded;
 	&:hover {
 	  @apply shadow-md;
+	  .featured-media {
+		img {
+		  @apply scale-110;
+		}
+	  }
 	}
 
 	.featured-media {
+	  @apply overflow-hidden;
+	  @apply rounded;
 	  img {
 		@apply mb-2;
 		@apply w-full;
 		@apply rounded;
+		@apply transition;
 	  }
 	}
 
