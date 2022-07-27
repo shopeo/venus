@@ -80,7 +80,7 @@ require_once get_template_directory() . '/inc/block-patterns.php';
 if ( ! function_exists( 'venus_styles' ) ) {
 	function venus_styles() {
 		$theme_version = wp_get_theme()->get( 'Version' );
-		wp_enqueue_style( 'venus-style', get_stylesheet_uri(), array(), $theme_version );
+		wp_enqueue_style( 'venus-style', get_template_directory_uri() . '/style.css', array(), $theme_version );
 		wp_style_add_data( 'venus-style', 'rtl', 'replace' );
 		wp_add_inline_style( 'venus-style', venus_get_customizer_css( 'front-end' ) );
 		// Add print css
