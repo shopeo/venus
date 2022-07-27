@@ -82,7 +82,7 @@ if ( ! function_exists( 'venus_styles' ) ) {
 		$theme_version = wp_get_theme()->get( 'Version' );
 		wp_enqueue_style( 'venus-style', get_stylesheet_uri(), array(), $theme_version );
 		wp_style_add_data( 'venus-style', 'rtl', 'replace' );
-		wp_add_inline_style( 'twentytwenty-style', venus_get_customizer_css( 'front-end' ) );
+		wp_add_inline_style( 'venus-style', venus_get_customizer_css( 'front-end' ) );
 		// Add print css
 		wp_enqueue_style( 'venus-print-style', get_template_directory_uri() . '/print.css', array(), $theme_version, 'print' );
 	}
