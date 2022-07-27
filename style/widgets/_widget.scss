@@ -12,7 +12,8 @@
 	@apply p-4;
 	@apply bg-white;
 	@apply rounded;
-	@apply shadow;
+	@apply border;
+	@apply border-neutral-100;
 	&:last-child {
 	  @apply mb-0;
 	}

@@ -44,6 +44,8 @@
 .grid {
   article {
 	@apply bg-white;
+	@apply border;
+	@apply border-neutral-100;
 	@apply p-4;
 	@apply rounded;
 	&:hover {
