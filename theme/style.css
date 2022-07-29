@@ -4169,9 +4169,8 @@ input, .focus\:ring-0{
   --tw-border-opacity: 1;
   border-color: rgb(245 245 245 / var(--tw-border-opacity));
 }
-.bg-gray-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+.bg-primary-900{
+  background-color: var(--primary-color-900);
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -12146,7 +12145,7 @@ nav ul, nav ol, .menu ul, .menu ol {
   display: block;
 }
 #site-footer a:hover{
-  color: var(--primary-color-300);
+  color: var(--primary-color-500);
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
@@ -12398,6 +12397,44 @@ nav ul, nav ol, .menu ul, .menu ol {
 }
 #primary-sidebar .widget:last-child{
   margin-bottom: 0px;
+}
+#primary-sidebar .widget_calendar{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#primary-sidebar .widget_calendar .wp-block-calendar tbody td,  #primary-sidebar .widget_calendar .wp-block-calendar th{
+  --tw-border-opacity: 1;
+  border-color: rgb(245 245 245 / var(--tw-border-opacity));
+}
+#primary-sidebar .widget_calendar .wp-block-calendar tbody td:first-child,  #primary-sidebar .widget_calendar .wp-block-calendar th:first-child{
+  border-left-width: 0px;
+}
+#primary-sidebar .widget_calendar .wp-block-calendar tbody td:last-child,  #primary-sidebar .widget_calendar .wp-block-calendar th:last-child{
+  border-right-width: 0px;
+}
+#primary-sidebar .widget_calendar caption{
+  margin-bottom: 0.5rem;
+}
+#primary-sidebar .widget_calendar a{
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+#primary-sidebar .widget_calendar thead th{
+  background-color: var(--primary-color-50);
+}
+#primary-sidebar .widget_calendar tbody a{
+  color: var(--primary-color-300);
+}
+#primary-sidebar .widget_calendar .wp-calendar-nav{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 .widget_nav_menu ul, .widget_nav_menu ol {
   list-style: none;
