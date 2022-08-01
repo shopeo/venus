@@ -208,7 +208,7 @@ add_action( 'customize_controls_enqueue_scripts', 'venus_customize_controls_enqu
 if ( ! function_exists( 'venus_customize_preview_init' ) ) {
 	function venus_customize_preview_init() {
 		$theme_version = wp_get_theme()->get( 'Version' );
-		wp_enqueue_script( 'venus-customize-preview', get_theme_file_uri( '/assets/js/customize-preview.js' ), array(
+		wp_enqueue_script( 'venus-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array(
 				'customize-preview',
 				'customize-selective-refresh',
 				'jquery'
@@ -273,12 +273,12 @@ add_action( 'widgets_init', 'venus_register_sidebars' );
 
 if ( ! function_exists( 'venus_block_editor_styles' ) ) {
 	function venus_block_editor_styles() {
-		wp_enqueue_style( 'venus-block-editor-styles', get_theme_file_uri( '/assets/css/editor-block.css' ), array(), wp_get_theme()->get( 'Version' ), 'all' );
+		wp_enqueue_style( 'venus-block-editor-styles', get_template_directory_uri() . '/assets/css/editor-block.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
 		wp_style_add_data( 'venus-block-editor-styles', 'rtl', 'replace' );
 
 		wp_add_inline_style( 'venus-block-editor-styles', venus_get_customizer_css( 'block-editor' ) );
 		wp_add_inline_style( 'venus-block-editor-styles', VenusNonLatinLanguages::get_non_latin_css( 'block-editor' ) );
-		wp_enqueue_script( 'venus-block-editor-script', get_theme_file_uri( '/assets/js/editor-script-block.js' ), array(
+		wp_enqueue_script( 'venus-block-editor-script', get_template_directory_uri() . '/assets/js/editor-script-block.js', array(
 				'wp-blocks',
 				'wp-dom'
 		), wp_get_theme()->get( 'Version' ), true );
@@ -290,7 +290,7 @@ add_action( 'enqueue_block_editor_assets', 'venus_block_editor_styles', 1, 1 );
 if ( ! function_exists( 'venus_classic_editor_styles' ) ) {
 	function venus_classic_editor_styles() {
 		$classic_editor_styles = array(
-				'/assets/css/editor-classic.css',
+				get_template_directory_uri() . '/assets/css/editor-classic.css',
 		);
 
 		add_editor_style( $classic_editor_styles );
