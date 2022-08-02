@@ -4074,9 +4074,6 @@ select{
 .flex-none{
   flex: none;
 }
-.grow{
-  flex-grow: 1;
-}
 .items-center{
   align-items: center;
 }
@@ -4098,11 +4095,6 @@ select{
   --tw-space-x-reverse: 0;
   margin-left: calc(1rem * var(--tw-space-x-reverse));
   margin-right: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-.space-x-14 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-left: calc(3.5rem * var(--tw-space-x-reverse));
-  margin-right: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .space-x-10 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
@@ -4144,8 +4136,8 @@ select{
   --tw-border-opacity: 1;
   border-color: rgb(245 245 245 / var(--tw-border-opacity));
 }
-.bg-primary-900{
-  background-color: var(--primary-color-900);
+.bg-primary-800{
+  background-color: var(--primary-color-800);
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -12074,7 +12066,7 @@ nav ul, nav ol, .menu ul, .menu ol {
   color: var(--primary-color-500);
 }
 .primary-menu > .menu-item-has-children > a::after, .primary-menu-mobile > .menu-item-has-children > a::after {
-  content: "\f0d7";
+  content: "\f107";
 }
 
 .primary-menu > .menu-item-has-children > a::after, 
@@ -12120,7 +12112,8 @@ nav ul, nav ol, .menu ul, .menu ol {
   display: block;
 }
 #site-footer a:hover{
-  color: var(--primary-color-500);
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
