@@ -64,7 +64,6 @@ if ( ! function_exists( 'venus_support' ) ) {
 }
 
 add_action( 'after_setup_theme', 'venus_support' );
-
 require_once get_template_directory() . '/inc/template-tags.php';
 require_once get_template_directory() . '/classes/VenusColorsCustomize.class.php';
 require_once get_template_directory() . '/classes/VenusFooterCustomize.class.php';
@@ -253,18 +252,18 @@ if ( ! function_exists( 'venus_register_sidebars' ) ) {
 		register_sidebar( array(
 				'id'            => 'primary',
 				'name'          => __( 'Primary Sidebar', 'venus' ),
-				'before_widget' => '<div id="%1$s" class="widget %2$s">',
-				'after_widget'  => '</div>',
-				'before_title'  => '<h3>',
-				'after_title'   => '</h3>'
+				'before_widget' => '<div id="%1$s" class="widget %2$s"><div class="widget-content">',
+				'after_widget'  => '</div></div>',
+				'before_title'  => '<h2 class="widget-title subheading heading-size-3">',
+				'after_title'   => '</h2>'
 		) );
 		register_sidebar( array(
 				'id'            => 'footer',
 				'name'          => __( 'Footer Sidebar', 'venus' ),
-				'before_widget' => '<div id="%1$s" class="widget %2$s">',
-				'after_widget'  => '</div>',
-				'before_title'  => '<h3>',
-				'after_title'   => '</h3>'
+				'before_widget' => '<div id="%1$s" class="widget %2$s"><div class="widget-content">',
+				'after_widget'  => '</div></div>',
+				'before_title'  => '<h2 class="widget-title subheading heading-size-3">',
+				'after_title'   => '</h2>'
 		) );
 	}
 }

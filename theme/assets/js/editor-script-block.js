@@ -3,6 +3,8 @@ var __webpack_exports__ = {};
 /*!*******************************************!*\
   !*** ./javascript/editor-script-block.js ***!
   \*******************************************/
-(function ($) {})(jQuery);
+wp.domReady(function () {
+  wp.blocks.unregisterBlockStyle('core/button', 'squared');
+});
 /******/ })()
 ;
