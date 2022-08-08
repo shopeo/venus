@@ -4131,18 +4131,12 @@ select{
 .border-t{
   border-top-width: 1px;
 }
-.border-t-4{
-  border-top-width: 4px;
-}
 .border-t-2{
   border-top-width: 2px;
 }
-.border-neutral-500{
+.border-neutral-300{
   --tw-border-opacity: 1;
-  border-color: rgb(115 115 115 / var(--tw-border-opacity));
-}
-.border-primary-500{
-  border-color: var(--primary-color-500);
+  border-color: rgb(212 212 212 / var(--tw-border-opacity));
 }
 .border-neutral-200{
   --tw-border-opacity: 1;
@@ -4151,9 +4145,6 @@ select{
 .border-neutral-100{
   --tw-border-opacity: 1;
   border-color: rgb(245 245 245 / var(--tw-border-opacity));
-}
-.bg-primary-800{
-  background-color: var(--primary-color-800);
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -4168,14 +4159,6 @@ select{
 }
 .p-4{
   padding: 1rem;
-}
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 .py-1{
   padding-top: 0.25rem;
@@ -4196,13 +4179,21 @@ select{
 .capitalize{
   text-transform: capitalize;
 }
-.text-white{
+.text-zinc-500{
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(113 113 122 / var(--tw-text-opacity));
+}
+.text-neutral-500{
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity));
 }
 .text-neutral-400{
   --tw-text-opacity: 1;
   color: rgb(163 163 163 / var(--tw-text-opacity));
+}
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .placeholder-neutral-400::-moz-placeholder{
   --tw-placeholder-opacity: 1;
@@ -12128,8 +12119,7 @@ nav ul, nav ol, .menu ul, .menu ol {
   display: block;
 }
 #site-footer a:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: var(--primary-color-500);
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
@@ -12170,11 +12160,15 @@ nav ul, nav ol, .menu ul, .menu ol {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   color: var(--primary-color-500);
 }
+#site-footer .wp-block-columns{
+  margin-bottom: 0px;
+}
 .widget{
   margin-bottom: 1rem;
 }
 .widget .widgettitle{
-  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
   margin-bottom: 0.5rem;
 }
 .hover\:bg-primary-600:hover{
@@ -12210,6 +12204,9 @@ nav ul, nav ol, .menu ul, .menu ol {
   }
   .md\:w-4\/5{
     width: 80%;
+  }
+  .md\:w-2\/5{
+    width: 40%;
   }
   .md\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));

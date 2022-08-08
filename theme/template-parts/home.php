@@ -1,5 +1,5 @@
 <?php
-$archive_title = __( 'Blog && News', 'venus' );;
+$archive_title = __( 'Blog & News', 'venus' );
 ?>
 <div class="archive-header">
 	<div class="archive-header-inner section-inner medium">

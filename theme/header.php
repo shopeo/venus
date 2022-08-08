@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header x-data="{ mobile_menu_open: false}" id="site-header" class="bg-white border-t-4 border-primary-500">
+<header x-data="{ mobile_menu_open: false}" id="site-header" class="bg-white">
 	<div class="flex justify-between items-center max-w-8xl p-4 mx-auto">
 		<div class="flex-none">
 			<?php venus_site_logo(); ?>

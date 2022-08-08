@@ -7,7 +7,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 				'primary_color_50',
 				array(
 					'capability'        => 'edit_theme_options',
-					'default'           => '#B2CBFB',
+					'default'           => '#F0F4FE',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
 				)
@@ -28,7 +28,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 				'primary_color_100',
 				array(
 					'capability'        => 'edit_theme_options',
-					'default'           => '#9EBDFA',
+					'default'           => '#DDE6FC',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
 				)
@@ -49,7 +49,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 				'primary_color_200',
 				array(
 					'capability'        => 'edit_theme_options',
-					'default'           => '#77A3F8',
+					'default'           => '#C2D3FB',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
 				)
@@ -70,7 +70,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 				'primary_color_300',
 				array(
 					'capability'        => 'edit_theme_options',
-					'default'           => '#5189F6',
+					'default'           => '#98B8F8',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
 				)
@@ -91,7 +91,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 				'primary_color_400',
 				array(
 					'capability'        => 'edit_theme_options',
-					'default'           => '#2A6EF4',
+					'default'           => '#6793F3',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
 				)
@@ -112,7 +112,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 				'primary_color_500',
 				array(
 					'capability'        => 'edit_theme_options',
-					'default'           => '#0C57E9',
+					'default'           => '#3662EC',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
 				)
@@ -133,7 +133,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 				'primary_color_600',
 				array(
 					'capability'        => 'edit_theme_options',
-					'default'           => '#0943B4',
+					'default'           => '#2E4DE2',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
 				)
@@ -154,7 +154,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 				'primary_color_700',
 				array(
 					'capability'        => 'edit_theme_options',
-					'default'           => '#072F7E',
+					'default'           => '#263BCF',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
 				)
@@ -175,7 +175,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 				'primary_color_800',
 				array(
 					'capability'        => 'edit_theme_options',
-					'default'           => '#041B49',
+					'default'           => '#2532A8',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
 				)
@@ -196,7 +196,7 @@ if ( ! class_exists( 'VenusColorsCustomize' ) ) {
 				'primary_color_900',
 				array(
 					'capability'        => 'edit_theme_options',
-					'default'           => '#010714',
+					'default'           => '#232E85',
 					'sanitize_callback' => 'sanitize_hex_color',
 					'transport'         => 'postMessage',
 				)
