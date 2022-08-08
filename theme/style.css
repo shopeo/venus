@@ -4173,6 +4173,10 @@ select{
 .text-center{
   text-align: center;
 }
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .uppercase{
   text-transform: uppercase;
 }
