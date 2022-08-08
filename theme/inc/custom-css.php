@@ -20,6 +20,8 @@ if ( ! function_exists( 'venus_generate_css' ) ) {
 
 if ( ! function_exists( 'venus_get_customizer_css' ) ) {
 	function venus_get_customizer_css( $type = 'front-end' ) {
+		ob_start();
+
 		return ob_get_clean();
 	}
 }
