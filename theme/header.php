@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header x-data="{ mobile_menu_open: false}" id="site-header" class="bg-white">
+<header x-data="{ mobile_menu_open: false}" id="site-header" class="bg-white border-t-4 border-primary-500">
 	<div class="flex justify-between items-center max-w-8xl p-4 mx-auto">
 		<div class="flex-none">
 			<?php venus_site_logo(); ?>
@@ -45,7 +45,7 @@
 		</div>
 	</div>
 	<div x-show="mobile_menu_open" x-transition @click.away="mobile_menu_open = false"
-		 class="md:hidden max-w-8xl p-4 border-t border-primary-500 mx-auto space-y-4">
+		 class="md:hidden max-w-8xl p-4 border-t-2 border-primary-500 shadow mx-auto space-y-4">
 		<?php if ( has_nav_menu( 'primary' ) ) {
 			wp_nav_menu( array(
 					'container_class' => 'menu',
