@@ -45,7 +45,7 @@
 		</div>
 	</div>
 	<div x-show="mobile_menu_open" x-transition @click.away="mobile_menu_open = false"
-		 class="md:hidden max-w-8xl p-4 border-t-2 border-neutral-200 mx-auto space-y-4">
+		 class="md:hidden max-w-8xl p-4 border-t border-primary-500 mx-auto space-y-4">
 		<?php if ( has_nav_menu( 'primary' ) ) {
 			wp_nav_menu( array(
 					'container_class' => 'menu',

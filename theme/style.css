@@ -4060,6 +4060,9 @@ select{
 .ml-4{
   margin-left: 1rem;
 }
+.mb-2{
+  margin-bottom: 0.5rem;
+}
 .block{
   display: block;
 }
@@ -4131,16 +4134,12 @@ select{
 .border-t{
   border-top-width: 1px;
 }
-.border-t-2{
-  border-top-width: 2px;
-}
 .border-neutral-300{
   --tw-border-opacity: 1;
   border-color: rgb(212 212 212 / var(--tw-border-opacity));
 }
-.border-neutral-200{
-  --tw-border-opacity: 1;
-  border-color: rgb(229 229 229 / var(--tw-border-opacity));
+.border-primary-500{
+  border-color: var(--primary-color-500);
 }
 .border-neutral-100{
   --tw-border-opacity: 1;
@@ -4164,6 +4163,10 @@ select{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 .pl-10{
   padding-left: 2.5rem;
 }
@@ -4173,9 +4176,9 @@ select{
 .text-center{
   text-align: center;
 }
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 .uppercase{
   text-transform: uppercase;
@@ -4198,6 +4201,10 @@ select{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-neutral-200{
+  --tw-text-opacity: 1;
+  color: rgb(229 229 229 / var(--tw-text-opacity));
 }
 .placeholder-neutral-400::-moz-placeholder{
   --tw-placeholder-opacity: 1;
@@ -12226,6 +12233,10 @@ nav ul, nav ol, .menu ul, .menu ol {
   .md\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+  .md\:py-24{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
   .md\:pt-8{
     padding-top: 2rem;
