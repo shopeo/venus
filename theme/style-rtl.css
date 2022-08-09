@@ -4034,6 +4034,18 @@ select{
   position: -webkit-sticky;
   position: sticky;
 }
+.top-0{
+  top: 0px;
+}
+.left-1\/2{
+  right: 50%;
+}
+.bottom-0{
+  bottom: 0px;
+}
+.right-0{
+  left: 0px;
+}
 .mx-auto{
   margin-right: auto;
   margin-left: auto;
@@ -4146,6 +4158,12 @@ select{
 .bg-primary-500{
   background-color: var(--primary-color-500);
 }
+.fill-primary-400{
+  fill: var(--primary-color-400);
+}
+.fill-primary-300{
+  fill: var(--primary-color-300);
+}
 .p-4{
   padding: 1rem;
 }
@@ -4203,6 +4221,15 @@ select{
 .placeholder-neutral-400::placeholder{
   --tw-placeholder-opacity: 1;
   color: rgb(163 163 163 / var(--tw-placeholder-opacity));
+}
+.opacity-50{
+  opacity: 0.5;
+}
+.opacity-20{
+  opacity: 0.2;
+}
+.opacity-30{
+  opacity: 0.3;
 }
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
