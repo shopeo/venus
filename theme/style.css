@@ -4059,8 +4059,8 @@ select{
 .bottom-0{
   bottom: 0px;
 }
-.right-0{
-  right: 0px;
+.right-4{
+  right: 1rem;
 }
 .mx-auto{
   margin-left: auto;

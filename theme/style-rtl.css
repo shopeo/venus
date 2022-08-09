@@ -4043,8 +4043,8 @@ select{
 .bottom-0{
   bottom: 0px;
 }
-.right-0{
-  left: 0px;
+.right-4{
+  left: 1rem;
 }
 .mx-auto{
   margin-right: auto;
