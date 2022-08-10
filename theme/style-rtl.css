@@ -12129,6 +12129,14 @@ body ul {
 body ol {
   list-style: auto;
 }
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
 nav ul, nav ol, .menu ul, .menu ol {
   list-style: none;
 }

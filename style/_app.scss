@@ -64,6 +64,19 @@ body {
   }
 }
 
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  
+}
+
 @import "components/components";
 @import "blocks/blocks";
 @import "shortcodes/shortcodes";
