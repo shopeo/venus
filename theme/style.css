@@ -4010,6 +4010,15 @@ select{
   outline: 1px solid ButtonText;
   outline: 1px auto -webkit-focus-ring-color;
 }
+.transform{
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+}
 .shadow, .sub-menu{
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
@@ -4066,6 +4075,14 @@ select{
   margin-left: auto;
   margin-right: auto;
 }
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -4096,6 +4113,9 @@ select{
 .h-8{
   height: 2rem;
 }
+.h-auto{
+  height: auto;
+}
 .w-full{
   width: 100%;
 }
@@ -4104,6 +4124,9 @@ select{
 }
 .flex-none{
   flex: none;
+}
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .items-center{
   align-items: center;
@@ -4174,6 +4197,9 @@ select{
 .bg-primary-500{
   background-color: var(--primary-color-500);
 }
+.fill-primary-500{
+  fill: var(--primary-color-500);
+}
 .fill-primary-400{
   fill: var(--primary-color-400);
 }
@@ -4186,6 +4212,10 @@ select{
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .py-16{
   padding-top: 4rem;
@@ -12077,39 +12107,39 @@ readers do not read off random characters that represent icons */
 a:hover{
   color: var(--primary-color-500);
 }
-h1{
+body h1{
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
 }
-h2{
+body h2{
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 500;
 }
-h3{
+body h3{
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 500;
 }
-h4{
+body h4{
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
 }
-h5{
+body h5{
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
 }
-h6{
+body h6{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-ul {
+body ul {
   list-style: disc;
 }
-ol {
+body ol {
   list-style: auto;
 }
 nav ul, nav ol, .menu ul, .menu ol {
@@ -12242,6 +12272,10 @@ nav ul, nav ol, .menu ul, .menu ol {
   .md\:col-span-1{
     grid-column: span 1 / span 1;
   }
+  .md\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
   .md\:block{
     display: block;
   }
@@ -12257,6 +12291,9 @@ nav ul, nav ol, .menu ul, .menu ol {
   .md\:w-2\/5{
     width: 40%;
   }
+  .md\:w-auto{
+    width: auto;
+  }
   .md\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -12268,13 +12305,13 @@ nav ul, nav ol, .menu ul, .menu ol {
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
-  .md\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
   .md\:py-24{
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .md\:pt-8{
     padding-top: 2rem;

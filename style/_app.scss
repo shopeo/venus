@@ -25,41 +25,43 @@ a {
   }
 }
 
-h1 {
-  @apply text-2xl;
-  @apply font-medium;
-}
+body {
+  h1 {
+	@apply text-2xl;
+	@apply font-medium;
+  }
 
-h2 {
-  @apply text-xl;
-  @apply font-medium;
-}
+  h2 {
+	@apply text-xl;
+	@apply font-medium;
+  }
 
-h3 {
-  @apply text-lg;
-  @apply font-medium;
-}
+  h3 {
+	@apply text-lg;
+	@apply font-medium;
+  }
 
-h4 {
-  @apply text-base;
-  @apply font-medium;
-}
+  h4 {
+	@apply text-base;
+	@apply font-medium;
+  }
 
-h5 {
-  @apply text-sm;
-  @apply font-medium;
-}
+  h5 {
+	@apply text-sm;
+	@apply font-medium;
+  }
 
-h6 {
-  @apply text-sm;
-}
+  h6 {
+	@apply text-sm;
+  }
 
-ul {
-  list-style: disc;
-}
+  ul {
+	list-style: disc;
+  }
 
-ol {
-  list-style: auto;
+  ol {
+	list-style: auto;
+  }
 }
 
 @import "components/components";
