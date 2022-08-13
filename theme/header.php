@@ -24,7 +24,7 @@
 		$enable_header_search = get_theme_mod( 'enable_header_search', true );
 		$enable_header_button = get_theme_mod( 'enable_header_button', true );
 		if ( $enable_header_search || $enable_header_button ) { ?>
-			<div class="hidden md:flex space-x-4">
+			<div class="hidden md:flex items-center space-x-4">
 				<?php
 				if ( $enable_header_search === true ) {
 					get_search_form();
@@ -35,13 +35,15 @@
 				if ( $enable_header_button === true && $header_button_text ) {
 					venus_header_button();
 				} ?>
+				<i class="fa-solid fa-circle-half-stroke"></i>
 			</div>
 		<?php } ?>
-		<div class="md:hidden">
+		<div class="flex items-center space-x-2 md:hidden">
 			<div @click="mobile_menu_open =! mobile_menu_open">
 				<span class="sr-only"><?php _e( 'Open menu', 'venus' ); ?></span>
 				<i class="fas fa-bars"></i>
 			</div>
+			<i class="fa-solid fa-circle-half-stroke"></i>
 		</div>
 	</div>
 	<div x-show="mobile_menu_open" x-transition @click.away="mobile_menu_open = false"
