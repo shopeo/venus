@@ -6,6 +6,9 @@ import focus from "@alpinejs/focus";
 import collapse from "@alpinejs/collapse";
 import morph from "@alpinejs/morph";
 import Clipboard from "@ryangjchandler/alpine-clipboard";
+import theme from "./components/theme";
+
+Alpine.data('theme', theme);
 
 Alpine.plugin(mask);
 Alpine.plugin(intersect);

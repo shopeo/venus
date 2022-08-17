@@ -4540,6 +4540,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _alpinejs_collapse__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @alpinejs/collapse */ "./node_modules/@alpinejs/collapse/dist/module.esm.js");
 /* harmony import */ var _alpinejs_morph__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @alpinejs/morph */ "./node_modules/@alpinejs/morph/dist/module.esm.js");
 /* harmony import */ var _ryangjchandler_alpine_clipboard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ryangjchandler/alpine-clipboard */ "./node_modules/@ryangjchandler/alpine-clipboard/src/index.js");
+/* harmony import */ var _components_theme__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/theme */ "./javascript/components/theme.js");
 
 
 
@@ -4548,6 +4549,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('theme', _components_theme__WEBPACK_IMPORTED_MODULE_8__["default"]);
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].plugin(_alpinejs_mask__WEBPACK_IMPORTED_MODULE_1__["default"]);
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].plugin(_alpinejs_intersect__WEBPACK_IMPORTED_MODULE_2__["default"]);
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].plugin(_alpinejs_persist__WEBPACK_IMPORTED_MODULE_3__["default"]);
@@ -4559,6 +4562,44 @@ window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"];
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start();
 
 (function ($) {})(jQuery);
+
+/***/ }),
+
+/***/ "./javascript/components/theme.js":
+/*!****************************************!*\
+  !*** ./javascript/components/theme.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
+  return {
+    theme: 'light',
+    init: function init() {
+      if (localStorage.theme === 'dark' || !('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        this.dark();
+      } else {
+        this.light();
+      }
+    },
+    toggle: function toggle() {
+      this.theme === 'light' ? this.dark() : this.light();
+    },
+    dark: function dark() {
+      this.theme = 'dark';
+      document.documentElement.classList.add('dark');
+      localStorage.theme = this.theme;
+    },
+    light: function light() {
+      this.theme = 'light';
+      document.documentElement.classList.remove('dark');
+      localStorage.theme = this.theme;
+    }
+  };
+});
 
 /***/ }),
 

@@ -7,7 +7,8 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header x-data="{ mobile_menu_open: false}" id="site-header" class="bg-white border-t-4 border-primary-500">
+<header x-data="{ mobile_menu_open: false}" id="site-header"
+		class="bg-white dark:bg-slate-800 border-t-4 border-primary-500">
 	<div class="flex justify-between items-center max-w-8xl p-4 mx-auto">
 		<div class="flex-none">
 			<?php venus_site_logo(); ?>
@@ -24,7 +25,7 @@
 		$enable_header_search = get_theme_mod( 'enable_header_search', true );
 		$enable_header_button = get_theme_mod( 'enable_header_button', true );
 		if ( $enable_header_search || $enable_header_button ) { ?>
-			<div class="hidden md:flex items-center space-x-4">
+			<div x-data="theme()" class="hidden md:flex items-center space-x-4">
 				<?php
 				if ( $enable_header_search === true ) {
 					get_search_form();
@@ -35,15 +36,15 @@
 				if ( $enable_header_button === true && $header_button_text ) {
 					venus_header_button();
 				} ?>
-				<i class="fa-solid fa-circle-half-stroke"></i>
+				<a href="javascript:;" @click="toggle()"><i class="fa-solid fa-circle-half-stroke"></i></a>
 			</div>
 		<?php } ?>
-		<div class="flex items-center space-x-2 md:hidden">
+		<div x-data="theme()" class="flex items-center space-x-2 md:hidden">
 			<div @click="mobile_menu_open =! mobile_menu_open">
 				<span class="sr-only"><?php _e( 'Open menu', 'venus' ); ?></span>
 				<i class="fas fa-bars"></i>
 			</div>
-			<i class="fa-solid fa-circle-half-stroke"></i>
+			<i @click="toggle()" class="fa-solid fa-circle-half-stroke"></i>
 		</div>
 	</div>
 	<div x-show="mobile_menu_open" x-transition @click.away="mobile_menu_open = false"
