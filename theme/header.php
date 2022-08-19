@@ -36,7 +36,7 @@
 				if ( $enable_header_button === true && $header_button_text ) {
 					venus_header_button();
 				} ?>
-
+				<a href="javascript:;" @click="toggle()"><i class="fa-solid fa-circle-half-stroke"></i></a>
 			</div>
 		<?php } ?>
 		<div x-data="theme()" class="flex items-center space-x-2 md:hidden">
