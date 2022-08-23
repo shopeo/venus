@@ -8,7 +8,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <header x-data="{ mobile_menu_open: false}" id="site-header"
-		class="bg-white dark:bg-slate-800 border-t-4 border-primary-500">
+		class="bg-white border-t-4 border-primary-500">
 	<div class="flex justify-between items-center max-w-8xl p-4 mx-auto">
 		<div class="flex-none">
 			<?php venus_site_logo(); ?>
@@ -36,7 +36,7 @@
 				if ( $enable_header_button === true && $header_button_text ) {
 					venus_header_button();
 				} ?>
-				<a href="javascript:;" @click="toggle()"><i class="fa-solid fa-circle-half-stroke"></i></a>
+<!--				<a href="javascript:;" @click="toggle()"><i class="fa-solid fa-circle-half-stroke"></i></a>-->
 			</div>
 		<?php } ?>
 		<div x-data="theme()" class="flex items-center space-x-2 md:hidden">
@@ -44,7 +44,7 @@
 				<span class="sr-only"><?php _e( 'Open menu', 'venus' ); ?></span>
 				<i class="fas fa-bars"></i>
 			</div>
-			<a href="javascript:;" @click="toggle()"><i class="fa-solid fa-circle-half-stroke"></i></a>
+<!--			<a href="javascript:;" @click="toggle()"><i class="fa-solid fa-circle-half-stroke"></i></a>-->
 		</div>
 	</div>
 	<div x-show="mobile_menu_open" x-transition @click.away="mobile_menu_open = false"
