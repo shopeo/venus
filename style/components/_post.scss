@@ -4,8 +4,14 @@
   }
 
   .post-meta-single-bottom {
+	@apply text-sm;
+	@apply text-neutral-500;
 	.post-meta {
-	  @apply space-x-4;
+	  @apply flex;
+	  @apply justify-between;
+	  .meta-icon {
+		@apply text-primary-500;
+	  }
 	}
   }
 
@@ -70,11 +76,15 @@
 	}
 
 	.entry-title {
-
+	  @apply text-xl;
+	  @apply pt-1;
 	}
 
 	.entry-content {
-
+	  @apply text-base;
+	  @apply pt-2;
+	  @apply pb-4;
+	  @apply text-neutral-500;
 	}
   }
 }

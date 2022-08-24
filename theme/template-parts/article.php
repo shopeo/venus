@@ -1,4 +1,4 @@
-<article <?php post_class( 'max-w-5xl mx-auto p-4 md:pt-8' ); ?>
+<article <?php post_class( 'max-w-5xl mx-auto p-4 pt-0' ); ?>
 		id="post-<?php the_ID(); ?>">
 	<?php
 	get_template_part( 'template-parts/featured-image' );

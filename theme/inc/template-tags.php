@@ -173,8 +173,8 @@ if ( ! function_exists( 'venus_get_post_meta' ) ) {
 			$post_meta_wrapper_classes = ' post-meta-single post-meta-single-top';
 		} elseif ( 'single-bottom' === $location ) {
 			$post_meta                 = apply_filters( 'venus_post_meta_location_single_bottom', array(
-					'author',
-					'post-date'
+					'post-date',
+					'comments'
 			) );
 			$post_meta_wrapper_classes = ' post-meta-single post-meta-single-bottom';
 		}
