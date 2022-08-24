@@ -8,10 +8,7 @@ if ( has_post_thumbnail() && ! post_password_required() ) {
 		<div class="featured-media-inner section-inner<?php echo $featured_media_inner_classes; ?>">
 			<?php
 			the_post_thumbnail();
-			$caption = get_the_post_thumbnail_caption();
-			if ( $caption ) { ?>
-				<figcaption class="wp-caption-text"><?php echo wp_kses_post( $caption ); ?></figcaption>
-			<?php } ?>
+			?>
 		</div>
 	</figure>
 <?php }

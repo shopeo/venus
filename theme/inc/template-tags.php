@@ -168,15 +168,13 @@ if ( ! function_exists( 'venus_get_post_meta' ) ) {
 		$post_meta_classes         = '';
 		if ( 'single-top' === $location ) {
 			$post_meta                 = apply_filters( 'venus_post_meta_location_single_top', array(
-					'author',
-					'post-date',
-					'categories'
+					'tags'
 			) );
 			$post_meta_wrapper_classes = ' post-meta-single post-meta-single-top';
 		} elseif ( 'single-bottom' === $location ) {
 			$post_meta                 = apply_filters( 'venus_post_meta_location_single_bottom', array(
-					'comments',
-					'tags'
+					'author',
+					'post-date'
 			) );
 			$post_meta_wrapper_classes = ' post-meta-single post-meta-single-bottom';
 		}
@@ -239,7 +237,7 @@ if ( ! function_exists( 'venus_get_post_meta' ) ) {
 								<span class="screen-reader-text"><?php _e( 'Tags', 'venus' ); ?></span>
 								<i class="fas fa-tag"></i>
 							</span>
-							<span class="meta-text"><?php the_tags( '', ', ', '' ); ?></span>
+							<span class="meta-text"><?php the_tags( '', '', '' ); ?></span>
 						</li>
 					<?php }
 

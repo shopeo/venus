@@ -3,28 +3,26 @@
   @apply text-center;
   .nav-links {
 	@apply inline-block;
-	@apply space-x-2;
+	@apply space-x-4;
 	.page-numbers {
-	  @apply text-primary-500;
+	  @apply text-neutral-500;
 	  @apply inline-block;
 	  @apply px-2;
 	  @apply bg-white;
+	  @apply border;
+	  @apply border-white;
 	  @apply rounded;
-	  &.current {
-		@apply bg-primary-500;
-		@apply text-white;
-	  }
-
-	  &:hover {
-		@apply bg-primary-500;
-		@apply text-white;
+	  &.current, &:hover {
+		@apply border;
+		@apply border-primary-500;
+		@apply text-primary-500;
 	  }
 	}
 
 	.dots {
 	  &:hover {
 		@apply bg-white;
-		@apply text-primary-500;
+		@apply text-neutral-500;
 	  }
 	}
   }

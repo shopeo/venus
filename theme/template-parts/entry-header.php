@@ -4,6 +4,7 @@ if ( is_singular() ) {
 	$entry_header_classes .= ' has-text-align-center header-footer-group';
 } ?>
 <div class="entry-header<?php echo esc_attr( $entry_header_classes ); ?>">
+	<?php venus_the_post_meta( get_the_ID(), 'single-top' ); ?>
 	<div class="entry-header-inner section-inner medium">
 		<?php
 		$intro_text_width = '';
@@ -19,10 +20,7 @@ if ( is_singular() ) {
 			<div class="intro-text section-inner max-percentage<?php echo $intro_text_width; ?>">
 				<?php the_excerpt(); ?>
 			</div>
-		<?php }
-
-		venus_the_post_meta( get_the_ID(), 'single-top' );
-		?>
+		<?php } ?>
 	</div>
 </div>
 

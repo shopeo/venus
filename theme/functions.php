@@ -229,16 +229,16 @@ if ( ! function_exists( 'venus_head' ) ) {
 		?>
 		<style>
 			:root {
-				--primary-color-50: <?php echo get_theme_mod('primary_color_50','#B2CBFB');?>;
-				--primary-color-100: <?php echo get_theme_mod('primary_color_100','#9EBDFA');?>;
-				--primary-color-200: <?php echo get_theme_mod('primary_color_200','#77A3F8');?>;
-				--primary-color-300: <?php echo get_theme_mod('primary_color_300','#5189F6');?>;
-				--primary-color-400: <?php echo get_theme_mod('primary_color_400','#2A6EF4');?>;
-				--primary-color-500: <?php echo get_theme_mod('primary_color_500','#0C57E9');?>;
-				--primary-color-600: <?php echo get_theme_mod('primary_color_600','#0943B4');?>;
-				--primary-color-700: <?php echo get_theme_mod('primary_color_700','#072F7E');?>;
-				--primary-color-800: <?php echo get_theme_mod('primary_color_800','#041B49');?>;
-				--primary-color-900: <?php echo get_theme_mod('primary_color_900','#010714');?>;
+				--primary-color-50: <?php echo get_theme_mod('primary_color_50','#F0F4FE');?>;
+				--primary-color-100: <?php echo get_theme_mod('primary_color_100','#DDE6FC');?>;
+				--primary-color-200: <?php echo get_theme_mod('primary_color_200','#C2D3FB');?>;
+				--primary-color-300: <?php echo get_theme_mod('primary_color_300','#98B8F8');?>;
+				--primary-color-400: <?php echo get_theme_mod('primary_color_400','#6793F3');?>;
+				--primary-color-500: <?php echo get_theme_mod('primary_color_500','#3662EC');?>;
+				--primary-color-600: <?php echo get_theme_mod('primary_color_600','#2E4DE2');?>;
+				--primary-color-700: <?php echo get_theme_mod('primary_color_700','#263BCF');?>;
+				--primary-color-800: <?php echo get_theme_mod('primary_color_800','#2532A8');?>;
+				--primary-color-900: <?php echo get_theme_mod('primary_color_900','#232E85');?>;
 			}
 		</style>
 		<?php
