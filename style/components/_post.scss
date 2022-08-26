@@ -78,6 +78,7 @@
 	.entry-title {
 	  @apply text-xl;
 	  @apply pt-1;
+	  @apply break-words;
 	}
 
 	.entry-content {
@@ -85,6 +86,7 @@
 	  @apply pt-2;
 	  @apply pb-4;
 	  @apply text-neutral-500;
+	  @apply break-words;
 	}
   }
 }

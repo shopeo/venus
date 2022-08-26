@@ -12342,6 +12342,7 @@ nav ul, nav ol, .menu ul, .menu ol {
   font-size: 1.25rem;
   line-height: 1.75rem;
   padding-top: 0.25rem;
+  overflow-wrap: break-word;
 }
 .grid-post .post .entry-content{
   font-size: 1rem;
@@ -12350,6 +12351,7 @@ nav ul, nav ol, .menu ul, .menu ol {
   padding-bottom: 1rem;
   --tw-text-opacity: 1;
   color: rgb(115 115 115 / var(--tw-text-opacity));
+  overflow-wrap: break-word;
 }
 #site-footer .wp-block-columns{
   margin-bottom: 0px;
