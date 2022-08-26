@@ -1,8 +1,8 @@
 <div class="max-w-8xl mx-auto p-4 md:py-8">
-	<div class="grid md:grid-cols-5 gap-4">
+	<div class="grid md:grid-cols-5 gap-8">
 		<div class="md:col-span-4">
 			<?php if ( have_posts() ) { ?>
-				<div class="grid md:grid-cols-3 gap-8 grid-post">
+				<div class="grid md:grid-cols-3 gap-4 grid-post">
 					<?php
 					while ( have_posts() ) {
 						the_post();
