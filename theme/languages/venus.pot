@@ -9,12 +9,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-07-12T13:52:33+08:00\n"
+"POT-Creation-Date: 2022-09-03T11:26:48+08:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: venus\n"
 
 #. Theme Name of the theme
+#: inc/block-patterns.php:3
 msgid "Venus"
 msgstr ""
 
@@ -95,33 +96,119 @@ msgid "Show button in header"
 msgstr ""
 
 #: classes/VenusCustomize.class.php:81
+#: header.php:35
+#: header.php:71
 #: inc/template-tags.php:72
 msgid "get started"
 msgstr ""
 
-#: classes/VenusCustomize.class.php:88
+#: classes/VenusCustomize.class.php:89
 msgid "Button text in header"
 msgstr ""
 
-#: classes/VenusCustomize.class.php:100
+#: classes/VenusCustomize.class.php:102
 msgid "Button link in header"
 msgstr ""
 
-#: footer.php:7
+#: classes/VenusFooterCustomize.class.php:33
+msgid "Footer"
+msgstr ""
+
+#: classes/VenusFooterCustomize.class.php:38
+msgid "ICP"
+msgstr ""
+
+#: classes/VenusFooterCustomize.class.php:53
+msgid "Show icp in footer"
+msgstr ""
+
+#: classes/VenusFooterCustomize.class.php:65
+msgid "ICP in footer"
+msgstr ""
+
+#: classes/VenusFooterCustomize.class.php:73
+msgid "Social Media"
+msgstr ""
+
+#: comments.php:15
+msgid "Leave a comment"
+msgstr ""
+
+#: comments.php:17
+msgctxt "comments title"
+msgid "One reply on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:19
+msgctxt "comments title"
+msgid "%1$s reply on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s replies on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:42
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:43
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:52
+msgid "Comments"
+msgstr ""
+
+#: comments.php:74
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:9
 msgctxt "copyright date format"
 msgid "Y"
 msgstr ""
 
-#: functions.php:128
+#: functions.php:135
 msgid "Primary Menu"
 msgstr ""
 
-#: header.php:37
+#: functions.php:254
+msgid "Primary Sidebar"
+msgstr ""
+
+#: functions.php:262
+msgid "Footer Sidebar"
+msgstr ""
+
+#: functions.php:361
+msgid "..."
+msgstr ""
+
+#: header.php:44
 msgid "Open menu"
 msgstr ""
 
 #: inc/template-tags.php:84
-msgid "Technical support by <a target=\"_blank\" href=\"%s\">SHOPEO</a>."
+msgid "Powered by <a target=\"_blank\" href=\"%s\">SHOPEO</a>."
+msgstr ""
+
+#: inc/template-tags.php:198
+msgid "Post author"
+msgstr ""
+
+#: inc/template-tags.php:211
+msgid "Post date"
+msgstr ""
+
+#: inc/template-tags.php:224
+msgid "Categories"
+msgstr ""
+
+#: inc/template-tags.php:237
+msgid "Tags"
+msgstr ""
+
+#: inc/template-tags.php:261
+msgid "Sticky post"
 msgstr ""
 
 #: searchform.php:11
@@ -131,4 +218,71 @@ msgstr ""
 #: searchform.php:15
 msgctxt "placeholder"
 msgid "Search&hellip;"
+msgstr ""
+
+#: template-parts/404.php:341
+msgid "Sorry, the page you visited does not exist."
+msgstr ""
+
+#: template-parts/article.php:9
+#: templates/blank.php:18
+#: templates/full-width.php:10
+#: templates/medium-width.php:10
+#: templates/min-width.php:10
+msgid "Continue reading"
+msgstr ""
+
+#: template-parts/article.php:14
+msgid "Page"
+msgstr ""
+
+#: template-parts/article.php:14
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/entry-author-bio.php:6
+msgid "By %s"
+msgstr ""
+
+#: template-parts/entry-author-bio.php:11
+msgid "View Archive <span aria-hidden=\"true\">&rarr;</span>"
+msgstr ""
+
+#: template-parts/navigation.php:12
+msgid "Post"
+msgstr ""
+
+#: template-parts/no-results.php:251
+#: template-parts/search.php:12
+msgid "Sorry, no related content found."
+msgstr ""
+
+#: template-parts/search.php:3
+msgid "Search:"
+msgstr ""
+
+#: template-parts/search.php:6
+msgid "We found %s result for your search."
+msgid_plural "We found %s results for your search."
+msgstr[0] ""
+msgstr[1] ""
+
+#: template-parts/search.php:13
+msgid "We could not find any results for your search."
+msgstr ""
+
+#. Template Name of the theme
+msgid "Blank"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Full Width"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Medium Width"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Min Width"
 msgstr ""

@@ -78,10 +78,10 @@ if ( ! function_exists( 'venus_header_button' ) ) {
 	}
 }
 
-if ( ! function_exists( 'venus_technical_support' ) ) {
-	function venus_technical_support( $display = true ) {
+if ( ! function_exists( 'venus_powered_by' ) ) {
+	function venus_powered_by( $display = true ) {
 		$link = sprintf(
-				__( 'Technical support by <a target="_blank" href="%s">SHOPEO</a>.', 'venus' ),
+				__( 'Powered by <a target="_blank" href="%s">SHOPEO</a>.', 'venus' ),
 				'https://www.shopeo.cn/'
 		);
 		if ( ! $display ) {

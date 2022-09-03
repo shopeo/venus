@@ -8,7 +8,7 @@
 		<div class="footer-copyright text-center md:text-left">
 			&copy; <?php echo date_i18n( _x( 'Y', 'copyright date format', 'venus' ) ); ?>
 			<a class="uppercase" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-			<?php venus_technical_support(); ?>
+			<?php venus_powered_by(); ?>
 			<?php venus_icp(); ?>
 		</div>
 		<div class="social-media space-x-4 text-center md:text-right">
