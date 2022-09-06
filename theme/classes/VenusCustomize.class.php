@@ -102,6 +102,10 @@ if ( ! class_exists( 'VenusCustomize' ) ) {
 				'label'    => __( 'Button link in header', 'venus' ),
 			) );
 			/**
+			 * Blog
+			 */
+			VenusBlogCustomize::register($wp_customize);
+			/**
 			 * Footer
 			 */
 			VenusFooterCustomize::register( $wp_customize );
