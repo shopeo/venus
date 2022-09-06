@@ -1,6 +1,6 @@
 <?php
-$archive_title    = get_bloginfo( 'name' );
-$archive_subtitle = venus_site_description( false );
+$archive_title    = get_theme_mod( 'blog_title', get_bloginfo( 'name' ) );
+$archive_subtitle = get_theme_mod( 'blog_slogan', venus_site_description( false ) );
 ?>
 <div class="archive-header bg-primary-500 py-16 md:py-24 ">
 	<div class="archive-header-inner relative max-w-8xl p-4 mx-auto section-inner medium text-center">

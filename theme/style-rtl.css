@@ -4121,11 +4121,11 @@ select{
 .justify-between{
   justify-content: space-between;
 }
-.gap-4{
-  gap: 1rem;
-}
 .gap-8{
   gap: 2rem;
+}
+.gap-4{
+  gap: 1rem;
 }
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;

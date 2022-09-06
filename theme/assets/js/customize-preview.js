@@ -69,6 +69,16 @@ var __webpack_exports__ = {};
       $('#site-footer .icp').text(to);
     });
   });
+  api('blog_title', function (value) {
+    value.bind(function (to) {
+      $('#site-content .archive-header .archive-title').html(to);
+    });
+  });
+  api('blog_slogan', function (value) {
+    value.bind(function (to) {
+      $('#site-content .archive-header .archive-subtitle').html(to);
+    });
+  });
 })(jQuery, wp.customize, _);
 /******/ })()
 ;
