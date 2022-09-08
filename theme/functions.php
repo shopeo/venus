@@ -33,6 +33,20 @@ if ( ! function_exists( 'venus_support' ) ) {
 
 		add_theme_support( 'title-tag' );
 
+		add_theme_support( 'post-formats',
+				array(
+						'aside',
+						'gallery',
+						'link',
+						'image',
+						'quote',
+						'status',
+						'video',
+						'audio',
+						'chat'
+				)
+		);
+
 		add_theme_support(
 				'html5',
 				array(
