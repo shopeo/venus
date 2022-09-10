@@ -337,7 +337,7 @@
 				</g>
 			</g>
 		</svg>
-		<h1>404</h1>
-		<p class="my-2 text-zinc-500"><?php _e( 'Sorry, the page you visited does not exist.', 'venus' ); ?></p>
+		<h1 class="text-primary-500">404</h1>
+		<p class="my-4 text-zinc-500"><?php _e( 'Sorry, the page you visited does not exist.', 'venus' ); ?></p>
 	</div>
 </div>
