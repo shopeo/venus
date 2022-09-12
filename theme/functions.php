@@ -9,7 +9,7 @@ if ( ! function_exists( 'venus_support' ) ) {
 
 		global $content_width;
 		if ( ! isset( $content_width ) ) {
-			$content_width = 640;
+			$content_width = 760;
 		}
 
 		add_theme_support( 'post-thumbnails' );
