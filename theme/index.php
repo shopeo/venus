@@ -10,7 +10,7 @@
 	} elseif ( is_home() ) {
 		get_template_part( 'template-parts/home' );
 	} elseif ( is_singular() ) {
-		get_template_part( 'template-parts/article' );
+		get_template_part( 'template-parts/single-post' );
 	} elseif ( is_archive() ) {
 		get_template_part( 'template-parts/archive' );
 	}
