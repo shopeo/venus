@@ -38,4 +38,4 @@ if ( $wp_query->found_posts ) {
 		<?php } ?>
 	</div>
 </div>
-<?php get_template_part( 'template-parts/grid-posts' ); ?>
+<?php get_template_part( 'template-parts/posts' ); ?>

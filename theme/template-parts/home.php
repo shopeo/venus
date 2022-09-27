@@ -27,4 +27,4 @@ $archive_subtitle = get_theme_mod( 'blog_slogan', venus_site_description( false 
 		<?php } ?>
 	</div>
 </div>
-<?php get_template_part( 'template-parts/grid-posts' ); ?>
+<?php get_template_part( 'template-parts/posts' ); ?>
