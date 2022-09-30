@@ -12,7 +12,7 @@ if ( ! function_exists( 'venus_site_logo' ) ) {
 				'logo_class'  => 'site-logo',
 				'title'       => '<a href="%1$s">%2$s</a>',
 				'title_class' => 'site-title',
-				'home_wrap'   => '<h1 class="%1$s">%2$s</h1>',
+				'wrap'        => '<h1 class="%1$s">%2$s</h1>',
 				'condition'   => ( is_front_page() || is_home() ) && ! is_page(),
 		);
 
@@ -28,7 +28,7 @@ if ( ! function_exists( 'venus_site_logo' ) ) {
 			$classname = $args['title_class'];
 		}
 
-		$html = sprintf( $args['home_wrap'], $classname, $contents );
+		$html = sprintf( $args['wrap'], $classname, $contents );
 
 		$html = apply_filters( 'venus_site_logo', $html, $args, $classname, $contents );
 
