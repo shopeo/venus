@@ -4119,11 +4119,11 @@ select{
 .w-full{
   width: 100%;
 }
-.max-w-5xl{
-  max-width: 64rem;
-}
 .max-w-full{
   max-width: 100%;
+}
+.max-w-5xl{
+  max-width: 64rem;
 }
 .flex-none{
   flex: none;
@@ -4220,6 +4220,10 @@ select{
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .py-8{
   padding-top: 2rem;

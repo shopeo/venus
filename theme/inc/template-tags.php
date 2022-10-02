@@ -65,7 +65,7 @@ if ( ! function_exists( 'venus_site_description' ) ) {
 if ( ! function_exists( 'venus_header_button' ) ) {
 	function venus_header_button( $display = true ) {
 		$wrapper = '<div class="header-button w-full text-center">%s</div>';
-		$a       = '<a class="block bg-primary-500 rounded-full py-1 text-white capitalize hover:bg-primary-600 hover:text-white" href="%1$s">%2$s</a>';
+		$a       = '<a class="block bg-primary-500 rounded-full py-1 px-4 text-white capitalize hover:bg-primary-600 hover:text-white" href="%1$s">%2$s</a>';
 		$link    = sprintf( $a, get_theme_mod( 'header_button_link', '#' ), get_theme_mod( 'header_button_text', __( 'get started', 'venus' ) ) );
 		$html    = sprintf( $wrapper, $link );
 		if ( ! $display ) {
