@@ -76,8 +76,8 @@ require_once get_template_directory() . '/classes/VenusScriptLoader.class.php';
 require_once get_template_directory() . '/classes/VenusNonLatinLanguages.class.php';
 require_once get_template_directory() . '/inc/custom-css.php';
 require_once get_template_directory() . '/inc/block-patterns.php';
-require_once get_template_directory() . 'classes/VenusDescriptionWidget.class.php';
-require_once get_template_directory() . 'classes/VenusQRCodeWidget.class.php';
+require_once get_template_directory() . '/classes/VenusDescriptionWidget.class.php';
+require_once get_template_directory() . '/classes/VenusQRCodeWidget.class.php';
 
 if ( ! function_exists( 'venus_styles' ) ) {
 	function venus_styles() {
