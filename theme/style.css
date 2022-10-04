@@ -12383,8 +12383,10 @@ nav ul, nav ol, .menu ul, .menu ol {
 .widget_venus_description_widget p{
   margin-top: 0.5rem;
 }
-#footer-sidebar .widget_venus_description_widget{
-  width: 80%;
+@media (min-width: 768px){
+  #footer-sidebar .widget_venus_description_widget{
+    width: 80%;
+  }
 }
 #footer-sidebar .widget_venus_description_widget img{
   width: 50%;
