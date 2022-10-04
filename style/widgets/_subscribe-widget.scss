@@ -1,0 +1,32 @@
+.widget_subscribe_widget {
+  @apply shadow-sm;
+  @apply rounded-md;
+  .subscribe-widget {
+	@apply p-4;
+	.subscribe-form {
+	  p {
+		@apply mb-4;
+		label {
+		  @apply hidden;
+		}
+
+		input {
+		  @apply w-full;
+		  @apply rounded-md;
+		  @apply border-neutral-100;
+		}
+	  }
+
+	  button {
+		@apply w-full;
+		@apply rounded-md;
+		@apply text-white;
+		@apply py-1;
+		@apply bg-primary-500;
+		&:hover {
+		  @apply bg-primary-600;
+		}
+	  }
+	}
+  }
+}

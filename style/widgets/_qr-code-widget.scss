@@ -1,0 +1,10 @@
+.widget_venus_qrcode_widget {
+  @apply text-center;
+  img {
+	@apply mx-auto;
+  }
+
+  .qrcode-title {
+	@apply mt-2;
+  }
+}

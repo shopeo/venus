@@ -1,5 +1,7 @@
 {
     "/theme/assets/js/app.js": "/theme/assets/js/app.js",
+    "/theme/assets/js/qr-code-widget.js": "/theme/assets/js/qr-code-widget.js",
+    "/theme/assets/js/description-widget.js": "/theme/assets/js/description-widget.js",
     "/theme/assets/js/customize.js": "/theme/assets/js/customize.js",
     "/theme/assets/js/customize-controls.js": "/theme/assets/js/customize-controls.js",
     "/theme/assets/js/customize-preview.js": "/theme/assets/js/customize-preview.js",

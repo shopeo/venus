@@ -1,8 +1,20 @@
 .widget {
   @apply mb-4;
 
-  .widgettitle {
+  .widgettitle, .widget-title {
+	@apply text-xl;
 	@apply text-black;
 	@apply mb-2;
+  }
+}
+
+#primary-sidebar {
+  .widget {
+	.widgettitle, .widget-title {
+	  @apply bg-primary-500;
+	  @apply text-white;
+	  @apply p-2;
+	  @apply rounded-t-md;
+	}
   }
 }
