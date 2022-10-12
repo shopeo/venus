@@ -51,6 +51,7 @@ if ( ! function_exists( 'venus_support' ) ) {
 
 		add_theme_support( 'align-wide' );
 		add_theme_support( 'responsive-embeds' );
+		add_theme_support( 'editor-styles' );
 
 		if ( is_customize_preview() ) {
 
