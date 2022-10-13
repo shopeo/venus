@@ -1,7 +1,9 @@
+<?php
+get_template_part( 'template-parts/featured-image' );
+?>
 <article <?php post_class( 'max-w-5xl mx-auto p-4 pt-0' ); ?>
 		id="post-<?php the_ID(); ?>">
 	<?php
-	get_template_part( 'template-parts/featured-image' );
 	get_template_part( 'template-parts/entry-header' );
 	?>
 	<div class="post-inner">
